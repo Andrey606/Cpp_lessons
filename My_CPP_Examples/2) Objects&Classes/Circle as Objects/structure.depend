@@ -1,0 +1,16 @@
+# depslib dependency file v1.0
+1560792131 source:c:\users\andrew\documents\ñ++\2) objects&classes\circle as objects\main.cpp
+	<iostream>
+	<clocale>
+	"msoftcon.h"
+
+1560791600 c:\users\andrew\documents\ñ++\2) objects&classes\circle as objects\msoftcom.h
+	<windows.h>
+	<conio.h>
+	<math.h>
+
+1560792196 c:\users\andrew\documents\ñ++\2) objects&classes\circle as objects\msoftcon.h
+	<windows.h>
+	<conio.h>
+	<math.h>
+

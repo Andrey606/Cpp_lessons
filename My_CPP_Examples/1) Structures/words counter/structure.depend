@@ -1,0 +1,6 @@
+# depslib dependency file v1.0
+1560788770 source:c:\users\andrew\documents\ñ++\words counter\main.cpp
+	<iostream>
+	<clocale>
+	<conio.h>
+
