@@ -37,7 +37,7 @@ MOVE          = mv -f
 TAR           = tar -cf
 COMPRESS      = gzip -9f
 DISTNAME      = http1.0.0
-DISTDIR = /home/andrew/Documents/HttpServer/HTTPServer/build-http-Desktop_Qt_5_14_1_GCC_64bit-Debug/.tmp/http1.0.0
+DISTDIR = /home/andrew/Documents/Cpp_lessons/My_CPP_Examples/HttpServer/HTTPServer/build-http-Desktop_Qt_5_14_1_GCC_64bit-Debug/.tmp/http1.0.0
 LINK          = g++
 LFLAGS        = -Wl,-rpath,/opt/Qt/5.15.0/gcc_64/lib
 LIBS          = $(SUBLIBS) /opt/Qt/5.15.0/gcc_64/lib/libQt5Network.so /opt/Qt/5.15.0/gcc_64/lib/libQt5Core.so -lpthread   
@@ -825,7 +825,7 @@ moc_clientconnection.cpp: ../http/clientconnection.h \
 		/opt/Qt/5.15.0/gcc_64/include/QtCore/qobject_impl.h \
 		moc_predefs.h \
 		/opt/Qt/5.15.0/gcc_64/bin/moc
-	/opt/Qt/5.15.0/gcc_64/bin/moc $(DEFINES) --include /home/andrew/Documents/HttpServer/HTTPServer/build-http-Desktop_Qt_5_14_1_GCC_64bit-Debug/moc_predefs.h -I/opt/Qt/5.15.0/gcc_64/mkspecs/linux-g++ -I/home/andrew/Documents/HttpServer/HTTPServer/http -I/opt/Qt/5.15.0/gcc_64/include -I/opt/Qt/5.15.0/gcc_64/include/QtNetwork -I/opt/Qt/5.15.0/gcc_64/include/QtCore -I. -I/usr/include/c++/9 -I/usr/include/x86_64-linux-gnu/c++/9 -I/usr/include/c++/9/backward -I/usr/lib/gcc/x86_64-linux-gnu/9/include -I/usr/local/include -I/usr/include/x86_64-linux-gnu -I/usr/include ../http/clientconnection.h -o moc_clientconnection.cpp
+	/opt/Qt/5.15.0/gcc_64/bin/moc $(DEFINES) --include /home/andrew/Documents/Cpp_lessons/My_CPP_Examples/HttpServer/HTTPServer/build-http-Desktop_Qt_5_14_1_GCC_64bit-Debug/moc_predefs.h -I/opt/Qt/5.15.0/gcc_64/mkspecs/linux-g++ -I/home/andrew/Documents/Cpp_lessons/My_CPP_Examples/HttpServer/HTTPServer/http -I/opt/Qt/5.15.0/gcc_64/include -I/opt/Qt/5.15.0/gcc_64/include/QtNetwork -I/opt/Qt/5.15.0/gcc_64/include/QtCore -I. -I/usr/include/c++/9 -I/usr/include/x86_64-linux-gnu/c++/9 -I/usr/include/c++/9/backward -I/usr/lib/gcc/x86_64-linux-gnu/9/include -I/usr/local/include -I/usr/include/x86_64-linux-gnu -I/usr/include ../http/clientconnection.h -o moc_clientconnection.cpp
 
 moc_webserver.cpp: ../http/webserver.h \
 		/opt/Qt/5.15.0/gcc_64/include/QtCore/QObject \
@@ -883,7 +883,7 @@ moc_webserver.cpp: ../http/webserver.h \
 		/opt/Qt/5.15.0/gcc_64/include/QtCore/qobject_impl.h \
 		moc_predefs.h \
 		/opt/Qt/5.15.0/gcc_64/bin/moc
-	/opt/Qt/5.15.0/gcc_64/bin/moc $(DEFINES) --include /home/andrew/Documents/HttpServer/HTTPServer/build-http-Desktop_Qt_5_14_1_GCC_64bit-Debug/moc_predefs.h -I/opt/Qt/5.15.0/gcc_64/mkspecs/linux-g++ -I/home/andrew/Documents/HttpServer/HTTPServer/http -I/opt/Qt/5.15.0/gcc_64/include -I/opt/Qt/5.15.0/gcc_64/include/QtNetwork -I/opt/Qt/5.15.0/gcc_64/include/QtCore -I. -I/usr/include/c++/9 -I/usr/include/x86_64-linux-gnu/c++/9 -I/usr/include/c++/9/backward -I/usr/lib/gcc/x86_64-linux-gnu/9/include -I/usr/local/include -I/usr/include/x86_64-linux-gnu -I/usr/include ../http/webserver.h -o moc_webserver.cpp
+	/opt/Qt/5.15.0/gcc_64/bin/moc $(DEFINES) --include /home/andrew/Documents/Cpp_lessons/My_CPP_Examples/HttpServer/HTTPServer/build-http-Desktop_Qt_5_14_1_GCC_64bit-Debug/moc_predefs.h -I/opt/Qt/5.15.0/gcc_64/mkspecs/linux-g++ -I/home/andrew/Documents/Cpp_lessons/My_CPP_Examples/HttpServer/HTTPServer/http -I/opt/Qt/5.15.0/gcc_64/include -I/opt/Qt/5.15.0/gcc_64/include/QtNetwork -I/opt/Qt/5.15.0/gcc_64/include/QtCore -I. -I/usr/include/c++/9 -I/usr/include/x86_64-linux-gnu/c++/9 -I/usr/include/c++/9/backward -I/usr/lib/gcc/x86_64-linux-gnu/9/include -I/usr/local/include -I/usr/include/x86_64-linux-gnu -I/usr/include ../http/webserver.h -o moc_webserver.cpp
 
 compiler_moc_objc_header_make_all:
 compiler_moc_objc_header_clean:
