@@ -15,13 +15,16 @@ void ClientConnection::readyRead()
     {
         const auto line = m_socket->readLine();
 
+        qDebug() << line;
+
         if(line == "\r\n")
         {
-            m_socket->write("HTTP/1.1 200 Ok\r\n");
+            m_socket->write("HTTP/1.1 200 OK\r\n");
             m_socket->write("Connection: keep-alive\r\n");
             m_socket->write("Connect-Length: 4\r\n");
             m_socket->write("\r\n");
-            m_socket->write("test");
+
+            m_socket->close();
         }
     }
 }

@@ -20,6 +20,8 @@ void Webserver::start()
 
 void Webserver::newConnection()
 {
+    qDebug() << "newConnection()";
+
     const auto socket = m_server->nextPendingConnection();
     if(!socket)
         return;
