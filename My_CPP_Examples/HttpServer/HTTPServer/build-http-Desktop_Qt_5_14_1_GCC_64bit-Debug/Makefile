@@ -16,7 +16,7 @@ CC            = gcc
 CXX           = g++
 DEFINES       = -DQT_DEPRECATED_WARNINGS -DQT_DISABLE_DEPRECATED_BEFORE=0x060000 -DQT_QML_DEBUG -DQT_NETWORK_LIB -DQT_CORE_LIB
 CFLAGS        = -pipe -g -Wall -Wextra -D_REENTRANT -fPIC $(DEFINES)
-CXXFLAGS      = -pipe -g -std=gnu++1y -Wall -Wextra -D_REENTRANT -fPIC $(DEFINES)
+CXXFLAGS      = -pipe -g -std=gnu++11 -Wall -Wextra -D_REENTRANT -fPIC $(DEFINES)
 INCPATH       = -I../http -I. -I/opt/Qt/5.15.0/gcc_64/include -I/opt/Qt/5.15.0/gcc_64/include/QtNetwork -I/opt/Qt/5.15.0/gcc_64/include/QtCore -I. -I/opt/Qt/5.15.0/gcc_64/mkspecs/linux-g++
 QMAKE         = /opt/Qt/5.15.0/gcc_64/bin/qmake
 DEL_FILE      = rm -f
@@ -764,7 +764,7 @@ compiler_moc_predefs_make_all: moc_predefs.h
 compiler_moc_predefs_clean:
 	-$(DEL_FILE) moc_predefs.h
 moc_predefs.h: /opt/Qt/5.15.0/gcc_64/mkspecs/features/data/dummy.cpp
-	g++ -pipe -g -std=gnu++1y -Wall -Wextra -dM -E -o moc_predefs.h /opt/Qt/5.15.0/gcc_64/mkspecs/features/data/dummy.cpp
+	g++ -pipe -g -std=gnu++11 -Wall -Wextra -dM -E -o moc_predefs.h /opt/Qt/5.15.0/gcc_64/mkspecs/features/data/dummy.cpp
 
 compiler_moc_header_make_all: moc_clientconnection.cpp moc_webserver.cpp
 compiler_moc_header_clean:

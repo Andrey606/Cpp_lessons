@@ -17,5 +17,5 @@ private:
     void readyRead();
 
 private:
-    const std::unique_ptr<QTcpSocket> m_socket;
+    const std::shared_ptr<QTcpSocket> m_socket;
 };

@@ -19,6 +19,6 @@ private slots:
     void newConnection();
 
 private:
-    const std::unique_ptr<QTcpServer> m_server;
+    const std::shared_ptr<QTcpServer> m_server;
 
 };
