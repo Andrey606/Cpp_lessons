@@ -119,6 +119,10 @@ bool operator>=(Rational const & lhs, Rational const & rhs){
 	return (lhs.get_num()>=rhs.get_num());
 }
 
+void operator >> (Rational const & lhs, Rational const & rhs) {
+    
+}
+
 int main()
 {
     Rational d1(1);
@@ -130,6 +134,8 @@ int main()
     int d_1 = 1;
     int d_2 = 2;
     int d_3 = 3;
+
+    d1 >> d2;
 
     // < true
     cout << (d1 < d2) << endl;
