@@ -1,0 +1,3 @@
+# A list of devices which will be redjoin to network automatically
+- omo.r.extender.ionic
+- omo.r.doorlock.timed

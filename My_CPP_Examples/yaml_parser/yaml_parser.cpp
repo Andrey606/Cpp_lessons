@@ -58,18 +58,66 @@ void operator >> (const YAML::Node& node, Monster& monster) {
         monster.powers.push_back(power);
     }*/
 }
+/*
+class CMySingleton
+{
+public:
+  static CMySingleton& Instance()
+  {
+    static CMySingleton singleton;
+    return singleton;
+  }
+
+// Other non-static member functions
+private:
+  CMySingleton() {}                                  // Private constructor
+  ~CMySingleton() {}
+  CMySingleton(const CMySingleton&);                 // Prevent copy-construction
+  CMySingleton& operator=(const CMySingleton&);      // Prevent assignment
+};
+*/
+
+/*void CMySingleton::upload_immortal_devices(void)
+{
+    char file_path[50] = "./immortal_omo_devices.yaml";
+
+    std::ifstream fin("./immortal_omo_devices.yaml");
+    YAML::Node doc = YAML::Load(fin);
+
+    if(doc.IsNull())
+    {
+        // ERROR opening yaml file
+        exit(228);
+    }
+
+    for(unsigned i=0;i<doc.size();i++) 
+    {
+        std::cout << doc[i].Scalar() << std::endl;
+    }
+}*/
 
 int main()
 {
-    std::ifstream fin("monsters.yaml");
+    /*std::ifstream fin("_immortal_omo_devices.yaml");
     YAML::Node doc = YAML::Load(fin);
-    YAML::Node config = YAML::LoadFile("monsters.yaml");
+    
+    if(doc.IsNull())
+    {
+        std::cout << "doc.IsNull" << std::endl;
+        exit(228);
+    }
+
+    std::string name;
 
     for(unsigned i=0;i<doc.size();i++) {
-        Monster monster;
-        doc[i] >> monster;
+        name = doc[i].Scalar();
+        std::cout << name << std::endl;
         //std::cout << monster.name << "\n";
-    }
+    }*/
+
+    //immortal_device& s = immortal_device::GetInstance(); 
 
     return 0;
 }
+
+
