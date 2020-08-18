@@ -24,13 +24,18 @@ int main()
     //unique_ptr<int> ap2(ap1); // не скомпилируется
     //unique_ptr<int> ap2;
     //ap2 = move(ap1);
+    //std::cout << ap1.get() << std::endl;
+    //std::cout << ap2.get() << std::endl;
 
     // лучший умный указатель
     // удаляет указатель только когда обьект класа остался один
-    shared_ptr<int> p1(new int(5));
-    shared_ptr<int> p2(p1);
+    //shared_ptr<int> p1(new int(5));
+    //shared_ptr<int> p2(p1);
 
     // weak_ptr
+    shared_ptr<int> p1(new int(5));
+    weak_ptr<int> p2(p1);
+    p2.lock().get(); // shared_ptr::get
    
     return 0;
 }
