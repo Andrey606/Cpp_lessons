@@ -1,11 +1,6 @@
 #include "devices.hpp"
 
 // Base
-Base_device::Base_device(void)
-{
-
-}
-
 void Base_device::set_mac(uint64_t mac)
 {
     mac = mac;
@@ -20,17 +15,13 @@ void Base_device::set_command(eCommand cmd)
 {
     Command = cmd;
 
+    set_command_proccesing();
 }
 
 // Intrercom
-Intercom::Intercom()
+void Intercom::set_command_proccesing(void)
 {
-
-}
-
-void Intercom::set_command(Base_device::eCommand cmd)
-{
-    // to do
+    std::cout << "Intrercom" << std::endl;
 }
 
 Base_device::eCommand Intercom::get_command(void)
@@ -39,14 +30,9 @@ Base_device::eCommand Intercom::get_command(void)
 }
 
 // Curtain
-Curtain::Curtain()
+void Curtain::set_command_proccesing(void)
 {
-
-}
-
-void Curtain::set_command(Base_device::eCommand cmd)
-{
-    // to do
+    std::cout << "Curtain" << std::endl;
 }
 
 Base_device::eCommand Curtain::get_command(void)
