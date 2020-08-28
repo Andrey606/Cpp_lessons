@@ -2,8 +2,6 @@
 
 #include <iostream>
 
-using namespace std;
-
 class Base_device
 {
 	public:
@@ -12,7 +10,7 @@ class Base_device
 		uint64_t get_mac(void);
 		void set_mac(uint64_t mac);
 		
-		virtual void set_command(int cmd) = 0;
+		virtual void set_command(int cmd);
 		virtual int get_command(void) = 0;
 	private:
 		uint64_t mac;
