@@ -1,11 +1,5 @@
-#include <iostream>
+#include "devices.hpp"
 
-using namespace std;
-
-class device
-{
-	
-};
 
 
 int main()
