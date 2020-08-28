@@ -2,5 +2,5 @@
 
 int main()
 {
-	Intercom inercom1;
+	//Intercom inercom1;
 }
