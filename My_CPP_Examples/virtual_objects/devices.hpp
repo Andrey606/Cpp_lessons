@@ -17,7 +17,7 @@ class Base_device
 		uint64_t mac;
 };
 
-class Intercom: Base_device 
+class Intercom: public Base_device 
 {
 	private:
 		//enum eCommand {UNDEFINED, ON, OFF} Command = Intercom::eCommand::UNDEFINED;
@@ -30,7 +30,7 @@ class Intercom: Base_device
 		int get_command(void);
 };
 
-class Curtain: Base_device 
+class Curtain: public Base_device 
 {
 	private:
 		//enum eCommand {UNDEFINED, OPEN, CLOSE} Command = Curtain::eCommand::UNDEFINED;
