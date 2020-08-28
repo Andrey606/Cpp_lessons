@@ -26,8 +26,8 @@ class Intercom: public Base_device
 		Intercom();
 		~Intercom();
 		
-		void set_command(int cmd);
-		int get_command(void);
+		void set_command(int cmd) override;
+		int get_command(void) override;
 };
 
 class Curtain: public Base_device 
@@ -39,6 +39,6 @@ class Curtain: public Base_device
 		Curtain();
 		~Curtain();
 		
-		void set_command(int cmd);
-		int get_command(void);
+		void set_command(int cmd) override;
+		int get_command(void) override;
 };
