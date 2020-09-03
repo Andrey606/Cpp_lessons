@@ -19,6 +19,10 @@
 #include <IKeypad.h>
 #include <ILatch.h>
 #include <string>
+#include <QDebug>
+#include <QVector>
+#include <QTime>
+#include <QtSql>
 
 enum class HardWareStatus {
     OK,    // Оборудование в порядке
