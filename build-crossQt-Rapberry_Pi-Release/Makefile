@@ -52,9 +52,73 @@ OBJECTS_DIR   = ./
 
 ####### Files
 
-SOURCES       = ../crossQt/main.cpp 
-OBJECTS       = main.o
-DIST          = ../../../raspi/qt5/mkspecs/features/spec_pre.prf \
+SOURCES       = ../crossQt/main.cpp \
+		../crossQt/yaml-cpp/src/binary.cpp \
+		../crossQt/yaml-cpp/src/contrib/graphbuilder.cpp \
+		../crossQt/yaml-cpp/src/contrib/graphbuilderadapter.cpp \
+		../crossQt/yaml-cpp/src/convert.cpp \
+		../crossQt/yaml-cpp/src/depthguard.cpp \
+		../crossQt/yaml-cpp/src/directives.cpp \
+		../crossQt/yaml-cpp/src/emit.cpp \
+		../crossQt/yaml-cpp/src/emitfromevents.cpp \
+		../crossQt/yaml-cpp/src/emitter.cpp \
+		../crossQt/yaml-cpp/src/emitterstate.cpp \
+		../crossQt/yaml-cpp/src/emitterutils.cpp \
+		../crossQt/yaml-cpp/src/exceptions.cpp \
+		../crossQt/yaml-cpp/src/exp.cpp \
+		../crossQt/yaml-cpp/src/memory.cpp \
+		../crossQt/yaml-cpp/src/node.cpp \
+		../crossQt/yaml-cpp/src/node_data.cpp \
+		../crossQt/yaml-cpp/src/nodebuilder.cpp \
+		../crossQt/yaml-cpp/src/nodeevents.cpp \
+		../crossQt/yaml-cpp/src/null.cpp \
+		../crossQt/yaml-cpp/src/ostream_wrapper.cpp \
+		../crossQt/yaml-cpp/src/parse.cpp \
+		../crossQt/yaml-cpp/src/parser.cpp \
+		../crossQt/yaml-cpp/src/regex_yaml.cpp \
+		../crossQt/yaml-cpp/src/scanner.cpp \
+		../crossQt/yaml-cpp/src/scanscalar.cpp \
+		../crossQt/yaml-cpp/src/scantag.cpp \
+		../crossQt/yaml-cpp/src/scantoken.cpp \
+		../crossQt/yaml-cpp/src/simplekey.cpp \
+		../crossQt/yaml-cpp/src/singledocparser.cpp \
+		../crossQt/yaml-cpp/src/stream.cpp \
+		../crossQt/yaml-cpp/src/tag.cpp 
+OBJECTS       = main.o \
+		binary.o \
+		graphbuilder.o \
+		graphbuilderadapter.o \
+		convert.o \
+		depthguard.o \
+		directives.o \
+		emit.o \
+		emitfromevents.o \
+		emitter.o \
+		emitterstate.o \
+		emitterutils.o \
+		exceptions.o \
+		exp.o \
+		memory.o \
+		node.o \
+		node_data.o \
+		nodebuilder.o \
+		nodeevents.o \
+		null.o \
+		ostream_wrapper.o \
+		parse.o \
+		parser.o \
+		regex_yaml.o \
+		scanner.o \
+		scanscalar.o \
+		scantag.o \
+		scantoken.o \
+		simplekey.o \
+		singledocparser.o \
+		stream.o \
+		tag.o
+DIST          = ../crossQt/yaml-cpp/src/contrib/yaml-cpp.natvis \
+		../crossQt/yaml-cpp/src/contrib/yaml-cpp.natvis.md \
+		../../../raspi/qt5/mkspecs/features/spec_pre.prf \
 		../../../raspi/qt5/mkspecs/common/unix.conf \
 		../../../raspi/qt5/mkspecs/common/linux.conf \
 		../../../raspi/qt5/mkspecs/common/sanitize.conf \
@@ -208,7 +272,6 @@ DIST          = ../../../raspi/qt5/mkspecs/features/spec_pre.prf \
 		../../../raspi/qt5/mkspecs/features/qt_config.prf \
 		../../../raspi/qt5/mkspecs/devices/linux-rasp-pi-g++/qmake.conf \
 		../../../raspi/qt5/mkspecs/features/spec_post.prf \
-		../crossQt/.qmake.stash \
 		../../../raspi/qt5/mkspecs/features/exclusive_builds.prf \
 		../../../raspi/qt5/mkspecs/features/toolchain.prf \
 		../../../raspi/qt5/mkspecs/features/default_pre.prf \
@@ -227,7 +290,96 @@ DIST          = ../../../raspi/qt5/mkspecs/features/spec_pre.prf \
 		../../../raspi/qt5/mkspecs/features/exceptions.prf \
 		../../../raspi/qt5/mkspecs/features/yacc.prf \
 		../../../raspi/qt5/mkspecs/features/lex.prf \
-		../crossQt/crossQt.pro  ../crossQt/main.cpp
+		../crossQt/crossQt.pro ../crossQt/yaml-cpp/include/yaml-cpp/anchor.h \
+		../crossQt/yaml-cpp/include/yaml-cpp/binary.h \
+		../crossQt/yaml-cpp/include/yaml-cpp/contrib/anchordict.h \
+		../crossQt/yaml-cpp/include/yaml-cpp/contrib/graphbuilder.h \
+		../crossQt/yaml-cpp/include/yaml-cpp/depthguard.h \
+		../crossQt/yaml-cpp/include/yaml-cpp/dll.h \
+		../crossQt/yaml-cpp/include/yaml-cpp/emitfromevents.h \
+		../crossQt/yaml-cpp/include/yaml-cpp/emitter.h \
+		../crossQt/yaml-cpp/include/yaml-cpp/emitterdef.h \
+		../crossQt/yaml-cpp/include/yaml-cpp/emittermanip.h \
+		../crossQt/yaml-cpp/include/yaml-cpp/emitterstyle.h \
+		../crossQt/yaml-cpp/include/yaml-cpp/eventhandler.h \
+		../crossQt/yaml-cpp/include/yaml-cpp/exceptions.h \
+		../crossQt/yaml-cpp/include/yaml-cpp/mark.h \
+		../crossQt/yaml-cpp/include/yaml-cpp/node/convert.h \
+		../crossQt/yaml-cpp/include/yaml-cpp/node/detail/impl.h \
+		../crossQt/yaml-cpp/include/yaml-cpp/node/detail/iterator.h \
+		../crossQt/yaml-cpp/include/yaml-cpp/node/detail/iterator_fwd.h \
+		../crossQt/yaml-cpp/include/yaml-cpp/node/detail/memory.h \
+		../crossQt/yaml-cpp/include/yaml-cpp/node/detail/node.h \
+		../crossQt/yaml-cpp/include/yaml-cpp/node/detail/node_data.h \
+		../crossQt/yaml-cpp/include/yaml-cpp/node/detail/node_iterator.h \
+		../crossQt/yaml-cpp/include/yaml-cpp/node/detail/node_ref.h \
+		../crossQt/yaml-cpp/include/yaml-cpp/node/emit.h \
+		../crossQt/yaml-cpp/include/yaml-cpp/node/impl.h \
+		../crossQt/yaml-cpp/include/yaml-cpp/node/iterator.h \
+		../crossQt/yaml-cpp/include/yaml-cpp/node/node.h \
+		../crossQt/yaml-cpp/include/yaml-cpp/node/parse.h \
+		../crossQt/yaml-cpp/include/yaml-cpp/node/ptr.h \
+		../crossQt/yaml-cpp/include/yaml-cpp/node/type.h \
+		../crossQt/yaml-cpp/include/yaml-cpp/noexcept.h \
+		../crossQt/yaml-cpp/include/yaml-cpp/null.h \
+		../crossQt/yaml-cpp/include/yaml-cpp/ostream_wrapper.h \
+		../crossQt/yaml-cpp/include/yaml-cpp/parser.h \
+		../crossQt/yaml-cpp/include/yaml-cpp/stlemitter.h \
+		../crossQt/yaml-cpp/include/yaml-cpp/traits.h \
+		../crossQt/yaml-cpp/include/yaml-cpp/yaml.h \
+		../crossQt/yaml-cpp/src/collectionstack.h \
+		../crossQt/yaml-cpp/src/contrib/graphbuilderadapter.h \
+		../crossQt/yaml-cpp/src/directives.h \
+		../crossQt/yaml-cpp/src/emitterstate.h \
+		../crossQt/yaml-cpp/src/emitterutils.h \
+		../crossQt/yaml-cpp/src/exp.h \
+		../crossQt/yaml-cpp/src/indentation.h \
+		../crossQt/yaml-cpp/src/nodebuilder.h \
+		../crossQt/yaml-cpp/src/nodeevents.h \
+		../crossQt/yaml-cpp/src/ptr_vector.h \
+		../crossQt/yaml-cpp/src/regex_yaml.h \
+		../crossQt/yaml-cpp/src/regeximpl.h \
+		../crossQt/yaml-cpp/src/scanner.h \
+		../crossQt/yaml-cpp/src/scanscalar.h \
+		../crossQt/yaml-cpp/src/scantag.h \
+		../crossQt/yaml-cpp/src/setting.h \
+		../crossQt/yaml-cpp/src/singledocparser.h \
+		../crossQt/yaml-cpp/src/stream.h \
+		../crossQt/yaml-cpp/src/streamcharsource.h \
+		../crossQt/yaml-cpp/src/stringsource.h \
+		../crossQt/yaml-cpp/src/tag.h \
+		../crossQt/yaml-cpp/src/token.h ../crossQt/main.cpp \
+		../crossQt/yaml-cpp/src/binary.cpp \
+		../crossQt/yaml-cpp/src/contrib/graphbuilder.cpp \
+		../crossQt/yaml-cpp/src/contrib/graphbuilderadapter.cpp \
+		../crossQt/yaml-cpp/src/convert.cpp \
+		../crossQt/yaml-cpp/src/depthguard.cpp \
+		../crossQt/yaml-cpp/src/directives.cpp \
+		../crossQt/yaml-cpp/src/emit.cpp \
+		../crossQt/yaml-cpp/src/emitfromevents.cpp \
+		../crossQt/yaml-cpp/src/emitter.cpp \
+		../crossQt/yaml-cpp/src/emitterstate.cpp \
+		../crossQt/yaml-cpp/src/emitterutils.cpp \
+		../crossQt/yaml-cpp/src/exceptions.cpp \
+		../crossQt/yaml-cpp/src/exp.cpp \
+		../crossQt/yaml-cpp/src/memory.cpp \
+		../crossQt/yaml-cpp/src/node.cpp \
+		../crossQt/yaml-cpp/src/node_data.cpp \
+		../crossQt/yaml-cpp/src/nodebuilder.cpp \
+		../crossQt/yaml-cpp/src/nodeevents.cpp \
+		../crossQt/yaml-cpp/src/null.cpp \
+		../crossQt/yaml-cpp/src/ostream_wrapper.cpp \
+		../crossQt/yaml-cpp/src/parse.cpp \
+		../crossQt/yaml-cpp/src/parser.cpp \
+		../crossQt/yaml-cpp/src/regex_yaml.cpp \
+		../crossQt/yaml-cpp/src/scanner.cpp \
+		../crossQt/yaml-cpp/src/scanscalar.cpp \
+		../crossQt/yaml-cpp/src/scantag.cpp \
+		../crossQt/yaml-cpp/src/scantoken.cpp \
+		../crossQt/yaml-cpp/src/simplekey.cpp \
+		../crossQt/yaml-cpp/src/singledocparser.cpp \
+		../crossQt/yaml-cpp/src/stream.cpp \
+		../crossQt/yaml-cpp/src/tag.cpp
 QMAKE_TARGET  = crossQt
 DESTDIR       = 
 TARGET        = crossQt
@@ -393,7 +545,6 @@ Makefile: ../crossQt/crossQt.pro ../../../raspi/qt5/mkspecs/devices/linux-rasp-p
 		../../../raspi/qt5/mkspecs/features/qt_config.prf \
 		../../../raspi/qt5/mkspecs/devices/linux-rasp-pi-g++/qmake.conf \
 		../../../raspi/qt5/mkspecs/features/spec_post.prf \
-		.qmake.stash \
 		../../../raspi/qt5/mkspecs/features/exclusive_builds.prf \
 		../../../raspi/qt5/mkspecs/features/toolchain.prf \
 		../../../raspi/qt5/mkspecs/features/default_pre.prf \
@@ -568,7 +719,6 @@ Makefile: ../crossQt/crossQt.pro ../../../raspi/qt5/mkspecs/devices/linux-rasp-p
 ../../../raspi/qt5/mkspecs/features/qt_config.prf:
 ../../../raspi/qt5/mkspecs/devices/linux-rasp-pi-g++/qmake.conf:
 ../../../raspi/qt5/mkspecs/features/spec_post.prf:
-.qmake.stash:
 ../../../raspi/qt5/mkspecs/features/exclusive_builds.prf:
 ../../../raspi/qt5/mkspecs/features/toolchain.prf:
 ../../../raspi/qt5/mkspecs/features/default_pre.prf:
@@ -603,7 +753,8 @@ distdir: FORCE
 	@test -d $(DISTDIR) || mkdir -p $(DISTDIR)
 	$(COPY_FILE) --parents $(DIST) $(DISTDIR)/
 	$(COPY_FILE) --parents ../../../raspi/qt5/mkspecs/features/data/dummy.cpp $(DISTDIR)/
-	$(COPY_FILE) --parents ../crossQt/main.cpp $(DISTDIR)/
+	$(COPY_FILE) --parents ../crossQt/yaml-cpp/include/yaml-cpp/anchor.h ../crossQt/yaml-cpp/include/yaml-cpp/binary.h ../crossQt/yaml-cpp/include/yaml-cpp/contrib/anchordict.h ../crossQt/yaml-cpp/include/yaml-cpp/contrib/graphbuilder.h ../crossQt/yaml-cpp/include/yaml-cpp/depthguard.h ../crossQt/yaml-cpp/include/yaml-cpp/dll.h ../crossQt/yaml-cpp/include/yaml-cpp/emitfromevents.h ../crossQt/yaml-cpp/include/yaml-cpp/emitter.h ../crossQt/yaml-cpp/include/yaml-cpp/emitterdef.h ../crossQt/yaml-cpp/include/yaml-cpp/emittermanip.h ../crossQt/yaml-cpp/include/yaml-cpp/emitterstyle.h ../crossQt/yaml-cpp/include/yaml-cpp/eventhandler.h ../crossQt/yaml-cpp/include/yaml-cpp/exceptions.h ../crossQt/yaml-cpp/include/yaml-cpp/mark.h ../crossQt/yaml-cpp/include/yaml-cpp/node/convert.h ../crossQt/yaml-cpp/include/yaml-cpp/node/detail/impl.h ../crossQt/yaml-cpp/include/yaml-cpp/node/detail/iterator.h ../crossQt/yaml-cpp/include/yaml-cpp/node/detail/iterator_fwd.h ../crossQt/yaml-cpp/include/yaml-cpp/node/detail/memory.h ../crossQt/yaml-cpp/include/yaml-cpp/node/detail/node.h ../crossQt/yaml-cpp/include/yaml-cpp/node/detail/node_data.h ../crossQt/yaml-cpp/include/yaml-cpp/node/detail/node_iterator.h ../crossQt/yaml-cpp/include/yaml-cpp/node/detail/node_ref.h ../crossQt/yaml-cpp/include/yaml-cpp/node/emit.h ../crossQt/yaml-cpp/include/yaml-cpp/node/impl.h ../crossQt/yaml-cpp/include/yaml-cpp/node/iterator.h ../crossQt/yaml-cpp/include/yaml-cpp/node/node.h ../crossQt/yaml-cpp/include/yaml-cpp/node/parse.h ../crossQt/yaml-cpp/include/yaml-cpp/node/ptr.h ../crossQt/yaml-cpp/include/yaml-cpp/node/type.h ../crossQt/yaml-cpp/include/yaml-cpp/noexcept.h ../crossQt/yaml-cpp/include/yaml-cpp/null.h ../crossQt/yaml-cpp/include/yaml-cpp/ostream_wrapper.h ../crossQt/yaml-cpp/include/yaml-cpp/parser.h ../crossQt/yaml-cpp/include/yaml-cpp/stlemitter.h ../crossQt/yaml-cpp/include/yaml-cpp/traits.h ../crossQt/yaml-cpp/include/yaml-cpp/yaml.h ../crossQt/yaml-cpp/src/collectionstack.h ../crossQt/yaml-cpp/src/contrib/graphbuilderadapter.h ../crossQt/yaml-cpp/src/directives.h ../crossQt/yaml-cpp/src/emitterstate.h ../crossQt/yaml-cpp/src/emitterutils.h ../crossQt/yaml-cpp/src/exp.h ../crossQt/yaml-cpp/src/indentation.h ../crossQt/yaml-cpp/src/nodebuilder.h ../crossQt/yaml-cpp/src/nodeevents.h ../crossQt/yaml-cpp/src/ptr_vector.h ../crossQt/yaml-cpp/src/regex_yaml.h ../crossQt/yaml-cpp/src/regeximpl.h ../crossQt/yaml-cpp/src/scanner.h ../crossQt/yaml-cpp/src/scanscalar.h ../crossQt/yaml-cpp/src/scantag.h ../crossQt/yaml-cpp/src/setting.h ../crossQt/yaml-cpp/src/singledocparser.h ../crossQt/yaml-cpp/src/stream.h ../crossQt/yaml-cpp/src/streamcharsource.h ../crossQt/yaml-cpp/src/stringsource.h ../crossQt/yaml-cpp/src/tag.h ../crossQt/yaml-cpp/src/token.h $(DISTDIR)/
+	$(COPY_FILE) --parents ../crossQt/main.cpp ../crossQt/yaml-cpp/src/binary.cpp ../crossQt/yaml-cpp/src/contrib/graphbuilder.cpp ../crossQt/yaml-cpp/src/contrib/graphbuilderadapter.cpp ../crossQt/yaml-cpp/src/convert.cpp ../crossQt/yaml-cpp/src/depthguard.cpp ../crossQt/yaml-cpp/src/directives.cpp ../crossQt/yaml-cpp/src/emit.cpp ../crossQt/yaml-cpp/src/emitfromevents.cpp ../crossQt/yaml-cpp/src/emitter.cpp ../crossQt/yaml-cpp/src/emitterstate.cpp ../crossQt/yaml-cpp/src/emitterutils.cpp ../crossQt/yaml-cpp/src/exceptions.cpp ../crossQt/yaml-cpp/src/exp.cpp ../crossQt/yaml-cpp/src/memory.cpp ../crossQt/yaml-cpp/src/node.cpp ../crossQt/yaml-cpp/src/node_data.cpp ../crossQt/yaml-cpp/src/nodebuilder.cpp ../crossQt/yaml-cpp/src/nodeevents.cpp ../crossQt/yaml-cpp/src/null.cpp ../crossQt/yaml-cpp/src/ostream_wrapper.cpp ../crossQt/yaml-cpp/src/parse.cpp ../crossQt/yaml-cpp/src/parser.cpp ../crossQt/yaml-cpp/src/regex_yaml.cpp ../crossQt/yaml-cpp/src/scanner.cpp ../crossQt/yaml-cpp/src/scanscalar.cpp ../crossQt/yaml-cpp/src/scantag.cpp ../crossQt/yaml-cpp/src/scantoken.cpp ../crossQt/yaml-cpp/src/simplekey.cpp ../crossQt/yaml-cpp/src/singledocparser.cpp ../crossQt/yaml-cpp/src/stream.cpp ../crossQt/yaml-cpp/src/tag.cpp $(DISTDIR)/
 
 
 clean: compiler_clean 
@@ -723,8 +874,448 @@ main.o: ../crossQt/main.cpp ../../../raspi/qt5pi/include/QtCore/QCoreApplication
 		../../../raspi/qt5pi/include/QtCore/qset.h \
 		../../../raspi/qt5pi/include/QtCore/qcontiguouscache.h \
 		../../../raspi/qt5pi/include/QtCore/qsharedpointer.h \
-		../../../raspi/qt5pi/include/QtCore/qsharedpointer_impl.h
+		../../../raspi/qt5pi/include/QtCore/qsharedpointer_impl.h \
+		../../../raspi/qt5pi/include/QtCore/QFile \
+		../../../raspi/qt5pi/include/QtCore/qfile.h \
+		../../../raspi/qt5pi/include/QtCore/qfiledevice.h \
+		../../../raspi/qt5pi/include/QtCore/QSettings \
+		../../../raspi/qt5pi/include/QtCore/qsettings.h \
+		/usr/local/include/yaml-cpp/yaml.h \
+		/usr/local/include/yaml-cpp/parser.h \
+		/usr/local/include/yaml-cpp/dll.h \
+		/usr/local/include/yaml-cpp/emitter.h \
+		/usr/local/include/yaml-cpp/binary.h \
+		/usr/local/include/yaml-cpp/emitterdef.h \
+		/usr/local/include/yaml-cpp/emittermanip.h \
+		/usr/local/include/yaml-cpp/null.h \
+		/usr/local/include/yaml-cpp/ostream_wrapper.h \
+		/usr/local/include/yaml-cpp/emitterstyle.h \
+		/usr/local/include/yaml-cpp/stlemitter.h \
+		/usr/local/include/yaml-cpp/exceptions.h \
+		/usr/local/include/yaml-cpp/mark.h \
+		/usr/local/include/yaml-cpp/noexcept.h \
+		/usr/local/include/yaml-cpp/traits.h \
+		/usr/local/include/yaml-cpp/node/node.h \
+		/usr/local/include/yaml-cpp/node/detail/iterator_fwd.h \
+		/usr/local/include/yaml-cpp/node/ptr.h \
+		/usr/local/include/yaml-cpp/node/type.h \
+		/usr/local/include/yaml-cpp/node/impl.h \
+		/usr/local/include/yaml-cpp/node/detail/memory.h \
+		/usr/local/include/yaml-cpp/node/detail/node.h \
+		/usr/local/include/yaml-cpp/node/detail/node_ref.h \
+		/usr/local/include/yaml-cpp/node/detail/node_data.h \
+		/usr/local/include/yaml-cpp/node/detail/node_iterator.h \
+		/usr/local/include/yaml-cpp/node/iterator.h \
+		/usr/local/include/yaml-cpp/node/detail/iterator.h \
+		/usr/local/include/yaml-cpp/node/convert.h \
+		/usr/local/include/yaml-cpp/node/detail/impl.h \
+		/usr/local/include/yaml-cpp/node/parse.h \
+		/usr/local/include/yaml-cpp/node/emit.h
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o main.o ../crossQt/main.cpp
+
+binary.o: ../crossQt/yaml-cpp/src/binary.cpp /usr/local/include/yaml-cpp/binary.h \
+		/usr/local/include/yaml-cpp/dll.h
+	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o binary.o ../crossQt/yaml-cpp/src/binary.cpp
+
+graphbuilder.o: ../crossQt/yaml-cpp/src/contrib/graphbuilder.cpp ../crossQt/yaml-cpp/src/contrib/graphbuilderadapter.h \
+		/usr/local/include/yaml-cpp/anchor.h \
+		/usr/local/include/yaml-cpp/contrib/anchordict.h \
+		/usr/local/include/yaml-cpp/contrib/graphbuilder.h \
+		/usr/local/include/yaml-cpp/mark.h \
+		/usr/local/include/yaml-cpp/dll.h \
+		/usr/local/include/yaml-cpp/emitterstyle.h \
+		/usr/local/include/yaml-cpp/eventhandler.h \
+		/usr/local/include/yaml-cpp/parser.h
+	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o graphbuilder.o ../crossQt/yaml-cpp/src/contrib/graphbuilder.cpp
+
+graphbuilderadapter.o: ../crossQt/yaml-cpp/src/contrib/graphbuilderadapter.cpp ../crossQt/yaml-cpp/src/contrib/graphbuilderadapter.h \
+		/usr/local/include/yaml-cpp/anchor.h \
+		/usr/local/include/yaml-cpp/contrib/anchordict.h \
+		/usr/local/include/yaml-cpp/contrib/graphbuilder.h \
+		/usr/local/include/yaml-cpp/mark.h \
+		/usr/local/include/yaml-cpp/dll.h \
+		/usr/local/include/yaml-cpp/emitterstyle.h \
+		/usr/local/include/yaml-cpp/eventhandler.h
+	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o graphbuilderadapter.o ../crossQt/yaml-cpp/src/contrib/graphbuilderadapter.cpp
+
+convert.o: ../crossQt/yaml-cpp/src/convert.cpp /usr/local/include/yaml-cpp/node/convert.h \
+		/usr/local/include/yaml-cpp/binary.h \
+		/usr/local/include/yaml-cpp/dll.h \
+		/usr/local/include/yaml-cpp/node/impl.h \
+		/usr/local/include/yaml-cpp/exceptions.h \
+		/usr/local/include/yaml-cpp/mark.h \
+		/usr/local/include/yaml-cpp/noexcept.h \
+		/usr/local/include/yaml-cpp/traits.h \
+		/usr/local/include/yaml-cpp/node/detail/memory.h \
+		/usr/local/include/yaml-cpp/node/ptr.h \
+		/usr/local/include/yaml-cpp/node/detail/node.h \
+		/usr/local/include/yaml-cpp/emitterstyle.h \
+		/usr/local/include/yaml-cpp/node/detail/node_ref.h \
+		/usr/local/include/yaml-cpp/node/type.h \
+		/usr/local/include/yaml-cpp/node/detail/node_data.h \
+		/usr/local/include/yaml-cpp/node/detail/node_iterator.h \
+		/usr/local/include/yaml-cpp/node/iterator.h \
+		/usr/local/include/yaml-cpp/node/node.h \
+		/usr/local/include/yaml-cpp/node/detail/iterator_fwd.h \
+		/usr/local/include/yaml-cpp/node/detail/iterator.h \
+		/usr/local/include/yaml-cpp/null.h
+	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o convert.o ../crossQt/yaml-cpp/src/convert.cpp
+
+depthguard.o: ../crossQt/yaml-cpp/src/depthguard.cpp /usr/local/include/yaml-cpp/depthguard.h \
+		/usr/local/include/yaml-cpp/exceptions.h \
+		/usr/local/include/yaml-cpp/mark.h \
+		/usr/local/include/yaml-cpp/dll.h \
+		/usr/local/include/yaml-cpp/noexcept.h \
+		/usr/local/include/yaml-cpp/traits.h
+	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o depthguard.o ../crossQt/yaml-cpp/src/depthguard.cpp
+
+directives.o: ../crossQt/yaml-cpp/src/directives.cpp ../crossQt/yaml-cpp/src/directives.h
+	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o directives.o ../crossQt/yaml-cpp/src/directives.cpp
+
+emit.o: ../crossQt/yaml-cpp/src/emit.cpp /usr/local/include/yaml-cpp/node/emit.h \
+		/usr/local/include/yaml-cpp/dll.h \
+		../crossQt/yaml-cpp/src/nodeevents.h \
+		/usr/local/include/yaml-cpp/anchor.h \
+		/usr/local/include/yaml-cpp/node/ptr.h \
+		/usr/local/include/yaml-cpp/emitfromevents.h \
+		/usr/local/include/yaml-cpp/emitterstyle.h \
+		/usr/local/include/yaml-cpp/eventhandler.h \
+		/usr/local/include/yaml-cpp/emitter.h \
+		/usr/local/include/yaml-cpp/binary.h \
+		/usr/local/include/yaml-cpp/emitterdef.h \
+		/usr/local/include/yaml-cpp/emittermanip.h \
+		/usr/local/include/yaml-cpp/null.h \
+		/usr/local/include/yaml-cpp/ostream_wrapper.h
+	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o emit.o ../crossQt/yaml-cpp/src/emit.cpp
+
+emitfromevents.o: ../crossQt/yaml-cpp/src/emitfromevents.cpp /usr/local/include/yaml-cpp/emitfromevents.h \
+		/usr/local/include/yaml-cpp/anchor.h \
+		/usr/local/include/yaml-cpp/emitterstyle.h \
+		/usr/local/include/yaml-cpp/eventhandler.h \
+		/usr/local/include/yaml-cpp/emitter.h \
+		/usr/local/include/yaml-cpp/binary.h \
+		/usr/local/include/yaml-cpp/dll.h \
+		/usr/local/include/yaml-cpp/emitterdef.h \
+		/usr/local/include/yaml-cpp/emittermanip.h \
+		/usr/local/include/yaml-cpp/null.h \
+		/usr/local/include/yaml-cpp/ostream_wrapper.h
+	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o emitfromevents.o ../crossQt/yaml-cpp/src/emitfromevents.cpp
+
+emitter.o: ../crossQt/yaml-cpp/src/emitter.cpp ../crossQt/yaml-cpp/src/emitterutils.h \
+		../crossQt/yaml-cpp/src/emitterstate.h \
+		../crossQt/yaml-cpp/src/setting.h \
+		/usr/local/include/yaml-cpp/noexcept.h \
+		/usr/local/include/yaml-cpp/emitterdef.h \
+		/usr/local/include/yaml-cpp/emittermanip.h \
+		/usr/local/include/yaml-cpp/ostream_wrapper.h \
+		/usr/local/include/yaml-cpp/dll.h \
+		../crossQt/yaml-cpp/src/indentation.h \
+		/usr/local/include/yaml-cpp/emitter.h \
+		/usr/local/include/yaml-cpp/binary.h \
+		/usr/local/include/yaml-cpp/null.h \
+		/usr/local/include/yaml-cpp/exceptions.h \
+		/usr/local/include/yaml-cpp/mark.h \
+		/usr/local/include/yaml-cpp/traits.h
+	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o emitter.o ../crossQt/yaml-cpp/src/emitter.cpp
+
+emitterstate.o: ../crossQt/yaml-cpp/src/emitterstate.cpp ../crossQt/yaml-cpp/src/emitterstate.h \
+		../crossQt/yaml-cpp/src/setting.h \
+		/usr/local/include/yaml-cpp/noexcept.h \
+		/usr/local/include/yaml-cpp/emitterdef.h \
+		/usr/local/include/yaml-cpp/emittermanip.h \
+		/usr/local/include/yaml-cpp/exceptions.h \
+		/usr/local/include/yaml-cpp/mark.h \
+		/usr/local/include/yaml-cpp/dll.h \
+		/usr/local/include/yaml-cpp/traits.h
+	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o emitterstate.o ../crossQt/yaml-cpp/src/emitterstate.cpp
+
+emitterutils.o: ../crossQt/yaml-cpp/src/emitterutils.cpp ../crossQt/yaml-cpp/src/emitterutils.h \
+		../crossQt/yaml-cpp/src/emitterstate.h \
+		../crossQt/yaml-cpp/src/setting.h \
+		/usr/local/include/yaml-cpp/noexcept.h \
+		/usr/local/include/yaml-cpp/emitterdef.h \
+		/usr/local/include/yaml-cpp/emittermanip.h \
+		/usr/local/include/yaml-cpp/ostream_wrapper.h \
+		/usr/local/include/yaml-cpp/dll.h \
+		../crossQt/yaml-cpp/src/exp.h \
+		../crossQt/yaml-cpp/src/regex_yaml.h \
+		../crossQt/yaml-cpp/src/regeximpl.h \
+		../crossQt/yaml-cpp/src/stream.h \
+		/usr/local/include/yaml-cpp/mark.h \
+		../crossQt/yaml-cpp/src/streamcharsource.h \
+		../crossQt/yaml-cpp/src/stringsource.h \
+		../crossQt/yaml-cpp/src/indentation.h \
+		/usr/local/include/yaml-cpp/binary.h \
+		/usr/local/include/yaml-cpp/null.h
+	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o emitterutils.o ../crossQt/yaml-cpp/src/emitterutils.cpp
+
+exceptions.o: ../crossQt/yaml-cpp/src/exceptions.cpp /usr/local/include/yaml-cpp/exceptions.h \
+		/usr/local/include/yaml-cpp/mark.h \
+		/usr/local/include/yaml-cpp/dll.h \
+		/usr/local/include/yaml-cpp/noexcept.h \
+		/usr/local/include/yaml-cpp/traits.h
+	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o exceptions.o ../crossQt/yaml-cpp/src/exceptions.cpp
+
+exp.o: ../crossQt/yaml-cpp/src/exp.cpp ../crossQt/yaml-cpp/src/exp.h \
+		../crossQt/yaml-cpp/src/regex_yaml.h \
+		/usr/local/include/yaml-cpp/dll.h \
+		../crossQt/yaml-cpp/src/regeximpl.h \
+		../crossQt/yaml-cpp/src/stream.h \
+		/usr/local/include/yaml-cpp/mark.h \
+		../crossQt/yaml-cpp/src/streamcharsource.h \
+		/usr/local/include/yaml-cpp/noexcept.h \
+		../crossQt/yaml-cpp/src/stringsource.h \
+		/usr/local/include/yaml-cpp/exceptions.h \
+		/usr/local/include/yaml-cpp/traits.h
+	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o exp.o ../crossQt/yaml-cpp/src/exp.cpp
+
+memory.o: ../crossQt/yaml-cpp/src/memory.cpp /usr/local/include/yaml-cpp/node/detail/memory.h \
+		/usr/local/include/yaml-cpp/dll.h \
+		/usr/local/include/yaml-cpp/node/ptr.h \
+		/usr/local/include/yaml-cpp/node/detail/node.h \
+		/usr/local/include/yaml-cpp/emitterstyle.h \
+		/usr/local/include/yaml-cpp/node/detail/node_ref.h \
+		/usr/local/include/yaml-cpp/node/type.h \
+		/usr/local/include/yaml-cpp/node/detail/node_data.h \
+		/usr/local/include/yaml-cpp/node/detail/node_iterator.h \
+		/usr/local/include/yaml-cpp/node/iterator.h \
+		/usr/local/include/yaml-cpp/node/node.h \
+		/usr/local/include/yaml-cpp/mark.h \
+		/usr/local/include/yaml-cpp/node/detail/iterator_fwd.h \
+		/usr/local/include/yaml-cpp/node/detail/iterator.h
+	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o memory.o ../crossQt/yaml-cpp/src/memory.cpp
+
+node.o: ../crossQt/yaml-cpp/src/node.cpp /usr/local/include/yaml-cpp/node/node.h \
+		/usr/local/include/yaml-cpp/dll.h \
+		/usr/local/include/yaml-cpp/emitterstyle.h \
+		/usr/local/include/yaml-cpp/mark.h \
+		/usr/local/include/yaml-cpp/node/detail/iterator_fwd.h \
+		/usr/local/include/yaml-cpp/node/ptr.h \
+		/usr/local/include/yaml-cpp/node/type.h \
+		../crossQt/yaml-cpp/src/nodebuilder.h \
+		/usr/local/include/yaml-cpp/anchor.h \
+		/usr/local/include/yaml-cpp/eventhandler.h \
+		../crossQt/yaml-cpp/src/nodeevents.h
+	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o node.o ../crossQt/yaml-cpp/src/node.cpp
+
+node_data.o: ../crossQt/yaml-cpp/src/node_data.cpp /usr/local/include/yaml-cpp/exceptions.h \
+		/usr/local/include/yaml-cpp/mark.h \
+		/usr/local/include/yaml-cpp/dll.h \
+		/usr/local/include/yaml-cpp/noexcept.h \
+		/usr/local/include/yaml-cpp/traits.h \
+		/usr/local/include/yaml-cpp/node/detail/memory.h \
+		/usr/local/include/yaml-cpp/node/ptr.h \
+		/usr/local/include/yaml-cpp/node/detail/node.h \
+		/usr/local/include/yaml-cpp/emitterstyle.h \
+		/usr/local/include/yaml-cpp/node/detail/node_ref.h \
+		/usr/local/include/yaml-cpp/node/type.h \
+		/usr/local/include/yaml-cpp/node/detail/node_data.h \
+		/usr/local/include/yaml-cpp/node/detail/node_iterator.h \
+		/usr/local/include/yaml-cpp/node/iterator.h \
+		/usr/local/include/yaml-cpp/node/node.h \
+		/usr/local/include/yaml-cpp/node/detail/iterator_fwd.h \
+		/usr/local/include/yaml-cpp/node/detail/iterator.h
+	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o node_data.o ../crossQt/yaml-cpp/src/node_data.cpp
+
+nodebuilder.o: ../crossQt/yaml-cpp/src/nodebuilder.cpp ../crossQt/yaml-cpp/src/nodebuilder.h \
+		/usr/local/include/yaml-cpp/anchor.h \
+		/usr/local/include/yaml-cpp/emitterstyle.h \
+		/usr/local/include/yaml-cpp/eventhandler.h \
+		/usr/local/include/yaml-cpp/node/ptr.h \
+		/usr/local/include/yaml-cpp/dll.h \
+		/usr/local/include/yaml-cpp/node/detail/node.h \
+		/usr/local/include/yaml-cpp/node/detail/node_ref.h \
+		/usr/local/include/yaml-cpp/node/type.h \
+		/usr/local/include/yaml-cpp/node/detail/node_data.h \
+		/usr/local/include/yaml-cpp/node/detail/node_iterator.h \
+		/usr/local/include/yaml-cpp/node/iterator.h \
+		/usr/local/include/yaml-cpp/node/node.h \
+		/usr/local/include/yaml-cpp/mark.h \
+		/usr/local/include/yaml-cpp/node/detail/iterator_fwd.h \
+		/usr/local/include/yaml-cpp/node/detail/iterator.h \
+		/usr/local/include/yaml-cpp/node/impl.h \
+		/usr/local/include/yaml-cpp/exceptions.h \
+		/usr/local/include/yaml-cpp/noexcept.h \
+		/usr/local/include/yaml-cpp/traits.h \
+		/usr/local/include/yaml-cpp/node/detail/memory.h
+	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o nodebuilder.o ../crossQt/yaml-cpp/src/nodebuilder.cpp
+
+nodeevents.o: ../crossQt/yaml-cpp/src/nodeevents.cpp ../crossQt/yaml-cpp/src/nodeevents.h \
+		/usr/local/include/yaml-cpp/anchor.h \
+		/usr/local/include/yaml-cpp/node/ptr.h \
+		/usr/local/include/yaml-cpp/dll.h \
+		/usr/local/include/yaml-cpp/eventhandler.h \
+		/usr/local/include/yaml-cpp/emitterstyle.h \
+		/usr/local/include/yaml-cpp/mark.h \
+		/usr/local/include/yaml-cpp/node/detail/node.h \
+		/usr/local/include/yaml-cpp/node/detail/node_ref.h \
+		/usr/local/include/yaml-cpp/node/type.h \
+		/usr/local/include/yaml-cpp/node/detail/node_data.h \
+		/usr/local/include/yaml-cpp/node/detail/node_iterator.h \
+		/usr/local/include/yaml-cpp/node/iterator.h \
+		/usr/local/include/yaml-cpp/node/node.h \
+		/usr/local/include/yaml-cpp/node/detail/iterator_fwd.h \
+		/usr/local/include/yaml-cpp/node/detail/iterator.h
+	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o nodeevents.o ../crossQt/yaml-cpp/src/nodeevents.cpp
+
+null.o: ../crossQt/yaml-cpp/src/null.cpp /usr/local/include/yaml-cpp/null.h \
+		/usr/local/include/yaml-cpp/dll.h
+	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o null.o ../crossQt/yaml-cpp/src/null.cpp
+
+ostream_wrapper.o: ../crossQt/yaml-cpp/src/ostream_wrapper.cpp /usr/local/include/yaml-cpp/ostream_wrapper.h \
+		/usr/local/include/yaml-cpp/dll.h
+	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o ostream_wrapper.o ../crossQt/yaml-cpp/src/ostream_wrapper.cpp
+
+parse.o: ../crossQt/yaml-cpp/src/parse.cpp /usr/local/include/yaml-cpp/node/parse.h \
+		/usr/local/include/yaml-cpp/dll.h \
+		../crossQt/yaml-cpp/src/nodebuilder.h \
+		/usr/local/include/yaml-cpp/anchor.h \
+		/usr/local/include/yaml-cpp/emitterstyle.h \
+		/usr/local/include/yaml-cpp/eventhandler.h \
+		/usr/local/include/yaml-cpp/node/ptr.h \
+		/usr/local/include/yaml-cpp/node/impl.h \
+		/usr/local/include/yaml-cpp/exceptions.h \
+		/usr/local/include/yaml-cpp/mark.h \
+		/usr/local/include/yaml-cpp/noexcept.h \
+		/usr/local/include/yaml-cpp/traits.h \
+		/usr/local/include/yaml-cpp/node/detail/memory.h \
+		/usr/local/include/yaml-cpp/node/detail/node.h \
+		/usr/local/include/yaml-cpp/node/detail/node_ref.h \
+		/usr/local/include/yaml-cpp/node/type.h \
+		/usr/local/include/yaml-cpp/node/detail/node_data.h \
+		/usr/local/include/yaml-cpp/node/detail/node_iterator.h \
+		/usr/local/include/yaml-cpp/node/iterator.h \
+		/usr/local/include/yaml-cpp/node/node.h \
+		/usr/local/include/yaml-cpp/node/detail/iterator_fwd.h \
+		/usr/local/include/yaml-cpp/node/detail/iterator.h \
+		/usr/local/include/yaml-cpp/parser.h
+	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o parse.o ../crossQt/yaml-cpp/src/parse.cpp
+
+parser.o: ../crossQt/yaml-cpp/src/parser.cpp ../crossQt/yaml-cpp/src/directives.h \
+		../crossQt/yaml-cpp/src/scanner.h \
+		../crossQt/yaml-cpp/src/ptr_vector.h \
+		../crossQt/yaml-cpp/src/stream.h \
+		/usr/local/include/yaml-cpp/mark.h \
+		/usr/local/include/yaml-cpp/dll.h \
+		../crossQt/yaml-cpp/src/token.h \
+		../crossQt/yaml-cpp/src/singledocparser.h \
+		/usr/local/include/yaml-cpp/anchor.h \
+		/usr/local/include/yaml-cpp/exceptions.h \
+		/usr/local/include/yaml-cpp/noexcept.h \
+		/usr/local/include/yaml-cpp/traits.h \
+		/usr/local/include/yaml-cpp/parser.h
+	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o parser.o ../crossQt/yaml-cpp/src/parser.cpp
+
+regex_yaml.o: ../crossQt/yaml-cpp/src/regex_yaml.cpp ../crossQt/yaml-cpp/src/regex_yaml.h \
+		/usr/local/include/yaml-cpp/dll.h \
+		../crossQt/yaml-cpp/src/regeximpl.h \
+		../crossQt/yaml-cpp/src/stream.h \
+		/usr/local/include/yaml-cpp/mark.h \
+		../crossQt/yaml-cpp/src/streamcharsource.h \
+		/usr/local/include/yaml-cpp/noexcept.h \
+		../crossQt/yaml-cpp/src/stringsource.h
+	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o regex_yaml.o ../crossQt/yaml-cpp/src/regex_yaml.cpp
+
+scanner.o: ../crossQt/yaml-cpp/src/scanner.cpp ../crossQt/yaml-cpp/src/exp.h \
+		../crossQt/yaml-cpp/src/regex_yaml.h \
+		/usr/local/include/yaml-cpp/dll.h \
+		../crossQt/yaml-cpp/src/regeximpl.h \
+		../crossQt/yaml-cpp/src/stream.h \
+		/usr/local/include/yaml-cpp/mark.h \
+		../crossQt/yaml-cpp/src/streamcharsource.h \
+		/usr/local/include/yaml-cpp/noexcept.h \
+		../crossQt/yaml-cpp/src/stringsource.h \
+		../crossQt/yaml-cpp/src/scanner.h \
+		../crossQt/yaml-cpp/src/ptr_vector.h \
+		../crossQt/yaml-cpp/src/token.h \
+		/usr/local/include/yaml-cpp/exceptions.h \
+		/usr/local/include/yaml-cpp/traits.h
+	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o scanner.o ../crossQt/yaml-cpp/src/scanner.cpp
+
+scanscalar.o: ../crossQt/yaml-cpp/src/scanscalar.cpp ../crossQt/yaml-cpp/src/scanscalar.h \
+		../crossQt/yaml-cpp/src/regex_yaml.h \
+		/usr/local/include/yaml-cpp/dll.h \
+		../crossQt/yaml-cpp/src/regeximpl.h \
+		../crossQt/yaml-cpp/src/stream.h \
+		/usr/local/include/yaml-cpp/mark.h \
+		../crossQt/yaml-cpp/src/streamcharsource.h \
+		/usr/local/include/yaml-cpp/noexcept.h \
+		../crossQt/yaml-cpp/src/stringsource.h \
+		../crossQt/yaml-cpp/src/exp.h \
+		/usr/local/include/yaml-cpp/exceptions.h \
+		/usr/local/include/yaml-cpp/traits.h
+	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o scanscalar.o ../crossQt/yaml-cpp/src/scanscalar.cpp
+
+scantag.o: ../crossQt/yaml-cpp/src/scantag.cpp ../crossQt/yaml-cpp/src/exp.h \
+		../crossQt/yaml-cpp/src/regex_yaml.h \
+		/usr/local/include/yaml-cpp/dll.h \
+		../crossQt/yaml-cpp/src/regeximpl.h \
+		../crossQt/yaml-cpp/src/stream.h \
+		/usr/local/include/yaml-cpp/mark.h \
+		../crossQt/yaml-cpp/src/streamcharsource.h \
+		/usr/local/include/yaml-cpp/noexcept.h \
+		../crossQt/yaml-cpp/src/stringsource.h \
+		/usr/local/include/yaml-cpp/exceptions.h \
+		/usr/local/include/yaml-cpp/traits.h
+	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o scantag.o ../crossQt/yaml-cpp/src/scantag.cpp
+
+scantoken.o: ../crossQt/yaml-cpp/src/scantoken.cpp ../crossQt/yaml-cpp/src/exp.h \
+		../crossQt/yaml-cpp/src/regex_yaml.h \
+		/usr/local/include/yaml-cpp/dll.h \
+		../crossQt/yaml-cpp/src/regeximpl.h \
+		../crossQt/yaml-cpp/src/stream.h \
+		/usr/local/include/yaml-cpp/mark.h \
+		../crossQt/yaml-cpp/src/streamcharsource.h \
+		/usr/local/include/yaml-cpp/noexcept.h \
+		../crossQt/yaml-cpp/src/stringsource.h \
+		../crossQt/yaml-cpp/src/scanner.h \
+		../crossQt/yaml-cpp/src/ptr_vector.h \
+		../crossQt/yaml-cpp/src/token.h \
+		../crossQt/yaml-cpp/src/scanscalar.h \
+		../crossQt/yaml-cpp/src/scantag.h \
+		../crossQt/yaml-cpp/src/tag.h \
+		/usr/local/include/yaml-cpp/exceptions.h \
+		/usr/local/include/yaml-cpp/traits.h
+	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o scantoken.o ../crossQt/yaml-cpp/src/scantoken.cpp
+
+simplekey.o: ../crossQt/yaml-cpp/src/simplekey.cpp ../crossQt/yaml-cpp/src/scanner.h \
+		../crossQt/yaml-cpp/src/ptr_vector.h \
+		../crossQt/yaml-cpp/src/stream.h \
+		/usr/local/include/yaml-cpp/mark.h \
+		/usr/local/include/yaml-cpp/dll.h \
+		../crossQt/yaml-cpp/src/token.h
+	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o simplekey.o ../crossQt/yaml-cpp/src/simplekey.cpp
+
+singledocparser.o: ../crossQt/yaml-cpp/src/singledocparser.cpp ../crossQt/yaml-cpp/src/collectionstack.h \
+		../crossQt/yaml-cpp/src/scanner.h \
+		../crossQt/yaml-cpp/src/ptr_vector.h \
+		../crossQt/yaml-cpp/src/stream.h \
+		/usr/local/include/yaml-cpp/mark.h \
+		/usr/local/include/yaml-cpp/dll.h \
+		../crossQt/yaml-cpp/src/token.h \
+		../crossQt/yaml-cpp/src/singledocparser.h \
+		/usr/local/include/yaml-cpp/anchor.h \
+		../crossQt/yaml-cpp/src/tag.h \
+		/usr/local/include/yaml-cpp/depthguard.h \
+		/usr/local/include/yaml-cpp/exceptions.h \
+		/usr/local/include/yaml-cpp/noexcept.h \
+		/usr/local/include/yaml-cpp/traits.h \
+		/usr/local/include/yaml-cpp/emitterstyle.h \
+		/usr/local/include/yaml-cpp/eventhandler.h \
+		/usr/local/include/yaml-cpp/null.h
+	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o singledocparser.o ../crossQt/yaml-cpp/src/singledocparser.cpp
+
+stream.o: ../crossQt/yaml-cpp/src/stream.cpp ../crossQt/yaml-cpp/src/stream.h \
+		/usr/local/include/yaml-cpp/mark.h \
+		/usr/local/include/yaml-cpp/dll.h
+	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o stream.o ../crossQt/yaml-cpp/src/stream.cpp
+
+tag.o: ../crossQt/yaml-cpp/src/tag.cpp ../crossQt/yaml-cpp/src/directives.h \
+		../crossQt/yaml-cpp/src/tag.h \
+		../crossQt/yaml-cpp/src/token.h \
+		/usr/local/include/yaml-cpp/mark.h \
+		/usr/local/include/yaml-cpp/dll.h
+	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o tag.o ../crossQt/yaml-cpp/src/tag.cpp
 
 ####### Install
 
