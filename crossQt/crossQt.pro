@@ -1,8 +1,7 @@
 QT -= gui
-QT += mqtt
+QT += core network mqtt sql testlib
 CONFIG += c++11 console
 CONFIG -= app_bundle
-QT += core network sql testlib
 LIBS += -L/usr/local/lib -lyaml-cpp
 
 # The following define makes your compiler emit warnings if you use
@@ -10,6 +9,7 @@ LIBS += -L/usr/local/lib -lyaml-cpp
 # depend on your compiler). Please consult the documentation of the
 # deprecated API in order to know how to port your code away from it.
 DEFINES += QT_DEPRECATED_WARNINGS
+
 
 # You can also make your code fail to compile if it uses deprecated APIs.
 # In order to do so, uncomment the following line.

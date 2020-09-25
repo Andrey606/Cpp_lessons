@@ -3,7 +3,7 @@
 // Base
 void Base_device::set_mac(uint64_t mac)
 {
-    mac = mac;
+    this->mac = mac;
 }
 
 uint64_t Base_device::get_mac(void)
@@ -13,6 +13,9 @@ uint64_t Base_device::get_mac(void)
 
 void Base_device::set_command(eCommand cmd)
 {
+    std::cout << "Base_device::set_command" << std::endl;
+
+
     Command = cmd;
 
     set_command_proccesing();

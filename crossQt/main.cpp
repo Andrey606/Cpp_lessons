@@ -9,7 +9,7 @@
 #include "yaml-cpp/yaml.h"
 
 
-#define PATH_TO_YAML_FILE   "/usr/config/"
+#define PATH_TO_YAML_FILE   ""
 #define NAME_OF_YAML_FILE   "immortal_omo_devices.yaml"
 
 void upload_immortal_devices(void)
@@ -29,7 +29,7 @@ void upload_immortal_devices(void)
         exit(228);
     }
 
-    if(!doc.IsNull() && setting->value("ALL/REJOIN").toString() == "ENABLE")
+    if(true/*!doc.IsNull() && setting->value("ALL/REJOIN").toString() == "ENABLE"*/)
     {
         qInfo().noquote() << endl << " rejoin are enabled" << endl;
         for(unsigned i=0;i<doc.size();i++)
