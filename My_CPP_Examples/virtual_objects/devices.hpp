@@ -30,7 +30,7 @@ class Intercom: public Base_device
 		void set_command_proccesing(void) override;
 		
 	public:
-		Intercom(Base_device& in): Base_device(std::move(in)){};
+		Intercom(Base_device&& in): Base_device(std::move(in)){};
 		~Intercom() = default;	
 };
 

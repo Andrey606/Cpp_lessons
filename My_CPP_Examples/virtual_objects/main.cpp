@@ -10,8 +10,12 @@ int main()
 	obj1.set_mac(123);
 	std::cout << obj1.get_mac() << std::endl;
 
-	Intercom *obj2 = new Intercom(obj1);
+	Intercom *obj2 = new Intercom(std::move(obj1));
 
+	while(1)
+	{
+		std::cout << "obj1: " << obj1.get_mac() << std::endl; // seg error
+	}
 	std::cout << obj2->get_mac() << std::endl;
 	obj2->set_command(Base_device::eCommand::ON);
 
