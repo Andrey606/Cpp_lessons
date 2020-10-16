@@ -25,7 +25,7 @@ int main()
 
 
 
-	/*auto a= std::make_shared<Intercom>();
+	auto a= std::make_shared<Intercom>();
 	auto b= std::make_shared<Curtain>();
 	auto c= std::make_shared<Base_device>();
 
@@ -42,5 +42,5 @@ int main()
 
 	obj=b;
 	b->set_command(Base_device::eCommand::ON);
-	std::cout << obj->get_mac() << std::endl << std::endl;*/
+	std::cout << obj->get_mac() << std::endl << std::endl;
 }
