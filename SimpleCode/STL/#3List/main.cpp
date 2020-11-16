@@ -1,11 +1,12 @@
 #include <iostream>
-#include <string>
-#include <memory>
 #include <vector>
-#include <functional>
+#include <list>
 
 using namespace std;
 
+/*
+* лист - это реализация двухсвязного списка
+*/
 
 int main() 
 {
