@@ -30,7 +30,7 @@ extern bool bad(int);
 int main(int argc, char* argv[])
 {
     // #1 нормально ли будет работать код, и ничего что я не создал обект класса, чем отличаются методы от функции
-    A* obj;
+    A* obj = nullptr;
     obj->method();
     obj++; // мы сдвинули память на 1
 
@@ -47,6 +47,9 @@ int main(int argc, char* argv[])
     // #3 зачем нужны виртуальные деструкторы
 
     // #4 от чего зависит размер указателей
+    int *a;
+    cout << "*int: " << sizeof(a) << endl;
+    cout << "size_t: " << sizeof(size_t) << endl;
 
     return 0;
 }
