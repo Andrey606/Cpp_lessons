@@ -12,6 +12,13 @@ using namespace std;
 class A
 {
 public:
+    int *a;
+
+    void method_a()
+    {
+        a = new int(2);
+        std::cout << "method_a" << std::endl;
+    }
     void method()
     {
         std::cout << "1" << std::endl;
@@ -31,9 +38,12 @@ int main(int argc, char* argv[])
 {
     // #1 нормально ли будет работать код, и ничего что я не создал обект класса, чем отличаются методы от функции
     A* obj = nullptr;
-    obj->method();
-    obj++; // мы сдвинули память на 1
+    obj->method(); // Дело в том, что у тебя этот метод дёргает все статическое, для его работы не требуется выделение памяти
+    obj->method_a(); // segmantation failed так как идет работа с динамической памятью
+    obj++; // мы просто сдвинули указатель память на 1
 
+    A obj2;
+    obj2.method_a(); // так работает
     // #2 где тут ошибка?, как устроен  двухсвязного списка, итератор, ++it
     /*list_l l = {1, 2, 3, 4, 5};
     for (list_l::iterator it = l.begin(); it != l.end(); ++it)
