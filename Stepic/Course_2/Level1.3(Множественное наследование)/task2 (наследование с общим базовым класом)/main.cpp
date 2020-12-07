@@ -7,7 +7,7 @@ using namespace std;
 
 
 struct Unit {
-    Unit (int id, int hp): id_(id), hp_(hp){}
+    Unit (int id, int hp): id_(id), hp_(hp){cout << "Unit constructor!" << endl;}
 
     virtual int id() const { return id_; }
     virtual int hp() const { return hp_; }
@@ -18,13 +18,13 @@ private:
 };
 
 struct Elf: public virtual Unit {
-    Elf(int id, int hp): Unit (id, hp){}
+    Elf(int id, int hp): Unit (id, hp){cout << "Elf constructor!" << endl;}
 
     void elfMethod() { cout << "elfMethod!" << endl; }
 };
 
 struct Archer: public virtual Unit {
-    Archer(int id, int hp): Unit (id, hp){}
+    Archer(int id, int hp): Unit (id, hp){cout << "Archer constructor!" << endl;}
 
     void archerMethod() { cout << "archerMethod!" << endl; }
 };
