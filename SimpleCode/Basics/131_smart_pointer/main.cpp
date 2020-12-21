@@ -1,7 +1,7 @@
 /*
 * Умные указатели. Smart pointers. Изучение С++ для начинающих. Урок #131
 * 
-* auto_ptr
+* auto_ptr - устарел, рекомендуют юзать unique_ptr
 * unique_ptr
 * shared_ptr
 */
