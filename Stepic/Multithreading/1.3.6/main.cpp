@@ -2,6 +2,8 @@
 #include <stdint.h>
 #include <iostream>
 
+// арифметика указателей
+
 int main(int argc, char **argv) 
 {
 
