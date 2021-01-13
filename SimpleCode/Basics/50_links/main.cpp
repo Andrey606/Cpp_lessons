@@ -10,6 +10,28 @@
 
 using namespace std;
 
+class Message
+{
+public:
+    explicit Message(const string& topicName=nullptr);
+    ~Message()=default;
+public:
+   
+    const string& topicName();
+
+private:
+    string _topicName;
+};
+
+Message::Message(const string& topicName):
+    _topicName(topicName)
+{
+}
+
+const string& Message::topicName()
+{
+    return _topicName;
+}
 
 int main() 
 {
@@ -68,6 +90,14 @@ int main()
     *ppa = 12;
 
     cout << "a\t" << a << endl; // ppa = pa = aRef = a
+
+    //1
+    // Message  msg;
+    // cout << msg.topicName() << endl; // error - Aborted (core dumped)
+
+    //2
+    // Message  msg("dcsds");
+    // cout << msg.topicName() << endl;
 
   
     return 0;
