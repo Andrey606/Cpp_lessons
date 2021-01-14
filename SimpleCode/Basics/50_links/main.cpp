@@ -85,15 +85,15 @@ int main()
     // ppa хранит адрес aRef
     int *ppa = &aRef;
 
-    cout << "*ppa\t" << *ppa << endl; // ppa = pa = aRef = a
+    cout << "*ppa = &aRef\t" << *ppa << endl; // ppa = pa = aRef = a
 
     *ppa = 12;
 
     cout << "a\t" << a << endl; // ppa = pa = aRef = a
 
     //1
-    // Message  msg;
-    // cout << msg.topicName() << endl; // error - Aborted (core dumped)
+    Message  msg;
+    cout << msg.topicName() << endl; // error - Aborted (core dumped)
 
     //2
     // Message  msg("dcsds");
