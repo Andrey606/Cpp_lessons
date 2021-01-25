@@ -20,17 +20,23 @@ private:
 struct Elf: public virtual Unit {
     Elf(int id, int hp): Unit (id, hp){cout << "Elf constructor!" << endl;}
 
+    virtual int id() const { return 10; }
+
     void elfMethod() { cout << "elfMethod!" << endl; }
 };
 
 struct Archer: public virtual Unit {
     Archer(int id, int hp): Unit (id, hp){cout << "Archer constructor!" << endl;}
 
+    virtual int id() const { return 11; }
+
     void archerMethod() { cout << "archerMethod!" << endl; }
 };
 
 struct ElfArcher: Elf, Archer {
     ElfArcher(int id, int hp): Unit (id, hp), Elf(id, hp), Archer(id, hp){}
+
+    virtual int id() const { return 11; }
 };
 
 Unit const * ElfBaseToArcherBase( Unit const * unit );

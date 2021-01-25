@@ -10,7 +10,8 @@ class Base{
     virtual void method() {cout << "from Base" << endl;}
 
 public:
-    virtual ~Base(){method();}
+    Base(){cout << "from Base()" << endl; method();}
+    virtual ~Base(){method();cout << "from ~Base()" << endl;}
     void baseMethod() {method();}
 };
 
@@ -18,7 +19,8 @@ class A: public Base{
     void method() {cout << "from A" << endl;}
 
 public:
-    ~A(){method();}
+    A(){cout << "from A()" << endl;}
+    ~A(){method();cout << "from ~A()" << endl;}
 };
 
 

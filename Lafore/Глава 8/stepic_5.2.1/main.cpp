@@ -45,6 +45,7 @@ struct String {
     
     String &operator=(const String &other)
     {
+        cout << "operator=" << endl;
         if (this != &other)
             String(other).swap(*this);
         return *this;
@@ -145,6 +146,10 @@ void test3()
     
     //String const ell  = hello[1][4]; // теперь в ell хранится подстрока "ell"
     //printf("%s\n", ell.str);
+
+    String tmp = String("test");
+
+    tmp = "sd";
 
 }
 
