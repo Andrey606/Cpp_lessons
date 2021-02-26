@@ -37,10 +37,10 @@ using namespace std;
 
 // патерны:
 /*
-1) Singleton
-2) Decorator
+1) Singleton - Гарантує, що клас має лише один екземпляр, та надає глобальну точку доступу до нього.
+2) Adapter - Дає змогу об’єктам із несумісними інтерфейсами працювати разом.
 3) Abstract Factory
-4) Adapter
+4) Builder
 */
 
 
@@ -136,7 +136,7 @@ int main()
     Из него же пример замены глобальной переменной функцией, возвращающей ссылку:
     std::map<...> &list_of_something() 
     { 
-        static std::map<...> lst; 
+        static std::map<...> lst; `1
         return lst; 
     }
     unsigned create(unsigned a)
@@ -226,7 +226,8 @@ int main()
 
     // 17(?). Initialization order of Bases and Members.
     /*
-
+    Если это вопрос про порядок инициализации класов:
+    
     */
 
     // 18(✓). Is it possible to call a virtual function inside of a constructor / destructor?
@@ -413,3 +414,132 @@ int main()
 Если у пользователя есть указатель на базовый класс, значением которого является адрес объекта производного класса, 
 то для вызова некоторого метода производного класса пользователю достаточно знать об интерфейсе базового класса.
 */
+
+/*
+1) повисший поинтер
+2) 
+*/
+
+
+
+
+
+/*
+struct Person
+{
+    int mAge;
+    char* mName;
+    char* mSurname;
+};
+
+class Employee
+{
+public:
+    Employee(const std::string& name, const std::string& Surname, const int age, const std::string& position)
+    {
+			this->mPosition = position;
+      mPerson->mAge = age;
+      mPerson->mName = new char={name};
+      mPerson->mSurname = new char={Surname};
+    }
+
+    Employee(const Employee& other)
+    {
+    	
+    }
+
+    bool operator==(const Employee& other)
+    {
+        
+    }
+
+    Employee& operator=(const Employee& other)
+    {
+			
+    }
+
+
+private:
+    Person* mPerson;
+    std::string mPosition;
+};
+
+
+
+где хранится таблица виртуальных 
+
+
+
+
+const MyType obj1;
+MyType obj2;
+
+void func(const MyType& obj)
+{
+ auto tmp  = const_cast<MyType&>(obj);
+ tmp.setValue(5);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+stl алгоритмы
+
+
+
+
+include 
+
+
+
+import
+
+
+
+
+dll и либ
+
+
+
+битовая структура
+
+
+анонимных неймспейс
+
+re-inter
+*/
+
+
+// полиморфный обьект
+
+/*
+наследование 
+композиция 
+
+
+сравнение float и double
+*/
+
+
+/*
+2.	How do you compare two floats/doubles?
+double b=5;
+double b1 = 5;
+bool eq = b == b1;
+*/
+
+
+
+// порядок инициализации виртуальных и обычных класов
+
+с/с++ runtime
