@@ -32,7 +32,8 @@ int main()
 {
     setlocale(LC_ALL, "ru");
  
-    
+    std::cout << "✖" << std::endl;
+    std::cout << "☒" << std::endl;
   
     return 0;
 }

@@ -33,6 +33,12 @@ using namespace std;
 25. How should runtime errors be handled in C ++? What general approaches do you know?
 26. What will happen if the exception will be thrown within a constructor ?
 27. C ++ supports multiple inheritance. What is the "diamond problem" that can occur with multiple inheritance? Give an example.
+
+
+28. где хранятся статические переменные
+29. разница между Free Store и Heap
+30. конструктор копирования с++
+31. конструктор перемещения с++
 */
 
 // патерны:
@@ -395,11 +401,35 @@ int main()
     нескольких путях наследования.
     */
     
+    /*
+    28. где хранятся статические переменные
+    Static - это ключевое слово в C++, используемое для придания элементу особых характеристик. 
+    Для статических элементов выделение памяти происходит только один раз и существуют эти элементы до завершения программы. 
+    Хранятся все эти элементы не в heap и не на stack, а в специальных сегментах памяти, которые называются .data и .bss 
+    (зависит от того инициализированы статические данные или нет). На картинке ниже показан типичный макет программной памяти.
+    */
     
+    /*
+    29. разница между Free Store и Heap
+    Free Store
+    The free store is one of the two dynamic memory areas allocated/freed by new/delete.
+    Object lifetime can be less than the time the storage is allocated. That is, free store objects can have memory allocated, without being immediately initialized, and they can be destroyed, without the memory being immediately deallocated. During the period when the storage is allocated but outside the object's lifetime, the storage may be accessed and manipulated through a void*, but none of the proto-object's nonstatic members or member functions may be accessed, have their addresses taken, or be otherwise manipulated.
 
-    
+    Heap
+    The heap is the other dynamic memory area allocated/freed by malloc()/free() and their variants.
+    Note that while the default global operators new and delete might be implemented in terms of malloc() and free() by a particular compiler, the heap is not the same as free store, and memory allocated in one area cannot be safely deallocated in the other
+    Memory allocated from the heap can be used for objects of class type by placement new construction and explicit destruction. If so used, the notes about free store object lifetime apply similarly here.
+    */
 
-    
+    //30. конструктор копирования с++
+    /*создается по умолчанию*/
+
+
+    //31. конструктор перемещения с++
+    /*создается по умолчанию
+    у стандартных стд обьектов он уже реализован просто используй его
+    https://coderoad.ru/15169224/C-%D0%9A%D0%BE%D0%BD%D1%81%D1%82%D1%80%D1%83%D0%BA%D1%82%D0%BE%D1%80-%D0%9F%D0%B5%D1%80%D0%B5%D0%BC%D0%B5%D1%89%D0%B5%D0%BD%D0%B8%D1%8F*/
+
     return 0;
 }
 
@@ -492,7 +522,6 @@ void func(const MyType& obj)
 
 
 
-
 stl алгоритмы
 
 
@@ -542,7 +571,7 @@ bool eq = b == b1;
 
 // порядок инициализации виртуальных и обычных класов
 
-с/с++ runtime
+//с/с++ runtime
 
 
-где хранятся глоб и статические переменый куча-стек-....
+//где хранятся глоб и статические переменый куча-стек-....
