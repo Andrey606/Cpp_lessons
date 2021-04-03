@@ -1,0 +1,538 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom" xmlns:creativeCommons="http://backend.userland.com/creativeCommonsRssModule" xmlns:re="http://purl.org/atompub/rank/1.0">
+    <title type="text">Newest questions tagged c&#x2B;&#x2B; - Stack Overflow</title>
+    <link rel="self" href="https://stackoverflow.com/feeds/tag?tagnames=c%2b%2b&amp;sort=newest" type="application/atom+xml" />
+    <link rel="alternate" href="https://stackoverflow.com/questions/tagged/?tagnames=c%2b%2b&amp;sort=newest" type="text/html" />
+    <subtitle>most recent 30 from stackoverflow.com</subtitle>
+    <updated>2021-04-03T17:19:12Z</updated>
+    <id>https://stackoverflow.com/feeds/tag?tagnames=c%2b%2b&amp;sort=newest</id>
+    <creativeCommons:license>https://creativecommons.org/licenses/by-sa/4.0/rdf</creativeCommons:license> 
+    <entry>
+        <id>https://stackoverflow.com/q/66933885</id>
+        <re:rank scheme="https://stackoverflow.com">0</re:rank>
+        <title type="text">C&#x2B;&#x2B; Dynamic Allocation with vectors and containers</title>
+            <category scheme="https://stackoverflow.com/tags" term="c&#x2B;&#x2B;" />
+            <category scheme="https://stackoverflow.com/tags" term="pointers" />
+            <category scheme="https://stackoverflow.com/tags" term="vector" />
+            <category scheme="https://stackoverflow.com/tags" term="dynamic" />
+            <category scheme="https://stackoverflow.com/tags" term="allocation" />
+        <author>
+            <name>Mohammad Hussein</name>
+            <uri>https://stackoverflow.com/users/8066064</uri>
+        </author>
+        <link rel="alternate" href="https://stackoverflow.com/questions/66933885/c-dynamic-allocation-with-vectors-and-containers" />
+        <published>2021-04-03T17:16:00Z</published>
+        <updated>2021-04-03T17:17:15Z</updated>
+        <summary type="html">
+            &lt;p&gt;1.What is the use of dynamic allocating vectors on the heap and is it a good practice?&lt;/p&gt;&#xA;&lt;p&gt;2.What is the difference between the following:-&lt;/p&gt;&#xA;&lt;pre&gt;&lt;code&gt;vector&amp;lt;Object&amp;gt; *col = new vector&amp;lt;Object&amp;gt;&#xA; &#xA;vector&amp;lt;Object*&amp;gt; col&#xA;&lt;/code&gt;&lt;/pre&gt;&#xA;&lt;p&gt;3.Does vectors dynamically allocate items on the heap in the following example:-&lt;/p&gt;&#xA;&lt;pre&gt;&lt;code&gt;vector&amp;lt;Object&amp;gt; x;&#xA;&#xA;or&#xA;&#xA;vector&amp;lt;int&amp;gt; x;&#xA;&lt;/code&gt;&lt;/pre&gt;&#xA;
+        </summary>
+    </entry>
+    <entry>
+        <id>https://stackoverflow.com/q/66933726</id>
+        <re:rank scheme="https://stackoverflow.com">0</re:rank>
+        <title type="text">How to pass a char as an argument of a function inside a class using template</title>
+            <category scheme="https://stackoverflow.com/tags" term="c&#x2B;&#x2B;" />
+            <category scheme="https://stackoverflow.com/tags" term="arrays" />
+            <category scheme="https://stackoverflow.com/tags" term="templates" />
+        <author>
+            <name>KittyCat</name>
+            <uri>https://stackoverflow.com/users/14540418</uri>
+        </author>
+        <link rel="alternate" href="https://stackoverflow.com/questions/66933726/how-to-pass-a-char-as-an-argument-of-a-function-inside-a-class-using-template" />
+        <published>2021-04-03T17:00:11Z</published>
+        <updated>2021-04-03T17:13:40Z</updated>
+        <summary type="html">
+            &lt;p&gt;I&#x27;m trying to pass a char array into a function(push) inside this class(BaseStack):&lt;/p&gt;&#xA;&lt;pre&gt;&lt;code&gt;template &amp;lt; class T &amp;gt;&#xA;class BaseStack&#xA;{&#xA;  void push(const T&amp;amp;item){&#xA;     //Ignore&#xA;    }&#xA;&#xA;}&#xA;&#xA;&lt;/code&gt;&lt;/pre&gt;&#xA;&lt;p&gt;What I tried was:&lt;/p&gt;&#xA;&lt;pre&gt;&lt;code&gt;char finalstring[L];&#xA;for(int i = 0 ; i &amp;lt; 5; i&#x2B;&#x2B;) &#xA;  finalstring[i] = &#x27;x&#x27;;&#xA;&#xA;BaseStack&amp;lt;char&amp;gt; c;&#xA;c.push(finalstring);&#xA;&lt;/code&gt;&lt;/pre&gt;&#xA;&lt;p&gt;But my compiler said that I was doing an invalid conversion&lt;/p&gt;&#xA;
+        </summary>
+    </entry>
+    <entry>
+        <id>https://stackoverflow.com/q/66933553</id>
+        <re:rank scheme="https://stackoverflow.com">-4</re:rank>
+        <title type="text">How do I solve this Sorting Error in Class</title>
+            <category scheme="https://stackoverflow.com/tags" term="c&#x2B;&#x2B;" />
+            <category scheme="https://stackoverflow.com/tags" term="class" />
+            <category scheme="https://stackoverflow.com/tags" term="sorting" />
+            <category scheme="https://stackoverflow.com/tags" term="visual-c&#x2B;&#x2B;" />
+            <category scheme="https://stackoverflow.com/tags" term="syntax-error" />
+        <author>
+            <name>CrossbowPanda</name>
+            <uri>https://stackoverflow.com/users/13828137</uri>
+        </author>
+        <link rel="alternate" href="https://stackoverflow.com/questions/66933553/how-do-i-solve-this-sorting-error-in-class" />
+        <published>2021-04-03T16:38:29Z</published>
+        <updated>2021-04-03T17:08:52Z</updated>
+        <summary type="html">
+            &lt;p&gt;I am learning C&#x2B;&#x2B; and I am stuck on this problem. Getting errors:&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Error    C2676   binary &#x27;[&#x27;: &#x27;Staff&#x27; does not define this operator or a conversion to a type acceptable to the predefined operator&lt;/li&gt;&#xA;&lt;li&gt;Severity Code    Description Project File    Line    Suppression State&#xA;Error   C2065   &#x27;sortByName&#x27;&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;p&gt;/* Create a class staff having fields: Staff_id , name, salary. Write a menu driven program for:&#xA;o To accept the data using array of objects&#xA;o To display the data&#xA;o To sort the data by name */&lt;/p&gt;&#xA;&lt;pre&gt;&lt;code&gt;#include&amp;lt;iostream&amp;gt;&#xA;#include&amp;lt;string&amp;gt;&#xA;#include&amp;lt;algorithm&amp;gt;&#xA;&#xA;using namespace std;&#xA;&#xA;class Staff {&#xA;    int Staff_id;&#xA;    int salary;&#xA;    string* name;&#xA;    int num_staff;&#xA;&#xA;public: &#xA;&#xA;    void set_id();&#xA;    void set_name(int);&#xA;    void set_salary();&#xA;&#xA;    int get_id()const {&#xA;        return Staff_id;&#xA;    }&#xA;&#xA;    int get_salary() {&#xA;        return salary;&#xA;    }&#xA;&#xA;    string get_name()const {&#xA;        return *name;&#xA;    }&#xA;&#xA;    Staff() {&#xA;        Staff_id = 0;&#xA;        salary = 0;&#xA;    }&#xA;&#xA;    Staff(int a, int n, int c) {&#xA;        Staff_id = a;&#xA;        num_staff = n;&#xA;        salary = c;&#xA;        string* name = new string[n];&#xA;        &#xA;    }&#xA;&#xA;    void display(Staff);&#xA;&#xA;&#xA;};&#xA;&#xA;void Staff:: display(Staff s) {&#xA;    // Sort by name&#xA;        for (int i = 0; i &amp;lt; num_staff; i&#x2B;&#x2B;) {&#xA;            cout &amp;lt;&amp;lt; &amp;quot;Name : &amp;quot; &amp;lt;&amp;lt; s[i].name;&#xA;        }&#xA;}&#xA;&#xA;void Staff::set_name(int x) {&#xA;&#xA;    for (int i = x; i &amp;lt; num_staff; i&#x2B;&#x2B;) {&#xA;        cout &amp;lt;&amp;lt; &amp;quot;Enter the name of Employee &amp;quot; &amp;lt;&amp;lt; i &amp;lt;&amp;lt; &amp;quot; : &amp;quot;;&#xA;        cin &amp;gt;&amp;gt; name[i];&#xA;        break;&#xA;    }&#xA;}&#xA;&#xA;void Staff::set_id() {&#xA;    cout &amp;lt;&amp;lt; &amp;quot;Enter Staff ID: &amp;quot;;&#xA;    cin &amp;gt;&amp;gt; Staff_id;&#xA;}&#xA;&#xA;void Staff::set_salary() {&#xA;    cout &amp;lt;&amp;lt; &amp;quot;Enter Salary : &amp;quot;;&#xA;    cin &amp;gt;&amp;gt; salary;&#xA;}&#xA;&#xA;bool sortByName(const Staff&amp;amp; lhs, const Staff&amp;amp; rhs) {&#xA;    return lhs.get_name() &amp;lt; rhs.get_name();&#xA;}&#xA;&#xA;int main() {&#xA;    string n;&#xA;&#xA;    int num;&#xA;    cout &amp;lt;&amp;lt; &amp;quot;Enter number of Staff : &amp;quot;;&#xA;    cin &amp;gt;&amp;gt; num;&#xA;&#xA;    Staff* s = new Staff[num];&#xA;    for (int i = 0; i &amp;lt; num; i&#x2B;&#x2B;) {&#xA;        s[i].set_name(i);&#xA;        s[i].set_id();&#xA;        s[i].set_salary();&#xA;&#xA;        s[i] = { s[i].get_id(), num, s[i].get_salary() };&#xA;&#xA;    }&#xA;    sort(name, name &#x2B; num, sortByName);&#xA;&#xA;    for (int i = 0; i &amp;lt; num; i&#x2B;&#x2B;) {&#xA;        void display(Staff s);&#xA;    }&#xA;}&#xA;&lt;/code&gt;&lt;/pre&gt;&#xA;
+        </summary>
+    </entry>
+    <entry>
+        <id>https://stackoverflow.com/q/66933439</id>
+        <re:rank scheme="https://stackoverflow.com">-4</re:rank>
+        <title type="text">Storing objects in memory using arrayList of pointers [closed]</title>
+            <category scheme="https://stackoverflow.com/tags" term="c&#x2B;&#x2B;" />
+        <author>
+            <name>drotarovSprievodca</name>
+            <uri>https://stackoverflow.com/users/15076074</uri>
+        </author>
+        <link rel="alternate" href="https://stackoverflow.com/questions/66933439/storing-objects-in-memory-using-arraylist-of-pointers" />
+        <published>2021-04-03T16:28:20Z</published>
+        <updated>2021-04-03T16:28:20Z</updated>
+        <summary type="html">
+            &lt;p&gt;Let say we have arraylist of pointers, each pointing on some small object. In memory the pointers are stored in continuous way. Are the objects on witch pointers point at stored in same way too or in the discontinuous way just like in linked list for example?&lt;/p&gt;&#xA;
+        </summary>
+    </entry>
+    <entry>
+        <id>https://stackoverflow.com/q/66933398</id>
+        <re:rank scheme="https://stackoverflow.com">0</re:rank>
+        <title type="text">Create Declaration / Definition</title>
+            <category scheme="https://stackoverflow.com/tags" term="c&#x2B;&#x2B;" />
+            <category scheme="https://stackoverflow.com/tags" term="visual-studio-code" />
+        <author>
+            <name>Robert</name>
+            <uri>https://stackoverflow.com/users/15502141</uri>
+        </author>
+        <link rel="alternate" href="https://stackoverflow.com/questions/66933398/create-declaration-definition" />
+        <published>2021-04-03T16:24:19Z</published>
+        <updated>2021-04-03T16:33:25Z</updated>
+        <summary type="html">
+            &lt;p&gt;With some IDE, once I declare a method in the &lt;code&gt;.h&lt;/code&gt; file, it is possible to generate automatically the definition in the &lt;code&gt;.cpp&lt;/code&gt; file. &lt;a href=&quot;https://docs.microsoft.com/en-us/cpp/ide/refactoring/create-declaration-definition?view=msvc-160&quot; rel=&quot;nofollow noreferrer&quot;&gt;https://docs.microsoft.com/en-us/cpp/ide/refactoring/create-declaration-definition?view=msvc-160&lt;/a&gt; It seems possible to do it as well with Visual Studio Code, but it looks outdated to me. I am not able to reproduce it.&lt;/p&gt;&#xA;&lt;p&gt;How can I do it with Visual Studio Code?&lt;/p&gt;&#xA;
+        </summary>
+    </entry>
+    <entry>
+        <id>https://stackoverflow.com/q/66933361</id>
+        <re:rank scheme="https://stackoverflow.com">-3</re:rank>
+        <title type="text">referencia a `omp_get_thread_num&#x27; sin definir [closed]</title>
+            <category scheme="https://stackoverflow.com/tags" term="c&#x2B;&#x2B;" />
+            <category scheme="https://stackoverflow.com/tags" term="mpi" />
+            <category scheme="https://stackoverflow.com/tags" term="openmp" />
+        <author>
+            <name>super j11</name>
+            <uri>https://stackoverflow.com/users/15546184</uri>
+        </author>
+        <link rel="alternate" href="https://stackoverflow.com/questions/66933361/referencia-a-omp-get-thread-num-sin-definir" />
+        <published>2021-04-03T16:20:41Z</published>
+        <updated>2021-04-03T16:44:18Z</updated>
+        <summary type="html">
+            &lt;p&gt;mpicc main4_4.c -o main4_4&#xA;/usr/bin/ld: /tmp/ccXyota0.o: en la funci&#xF3;n &lt;code&gt;main&#x27;: main4_4.c:(.text&#x2B;0x134): referencia a &lt;/code&gt;omp_get_thread_num&#x27; sin definir&#xA;/usr/bin/ld: main4_4.c:(.text&#x2B;0x142): referencia a `omp_get_num_threads&#x27; sin definir&#xA;no corre el pograma y no se porque&#xA;the program does not run and I don&#x27;t know why.&lt;/p&gt;&#xA;&lt;p&gt;mira lo que pasa es que no corre el pograma que es un trabajo de universidad que usamos el open mp y mpi&lt;/p&gt;&#xA;
+        </summary>
+    </entry>
+    <entry>
+        <id>https://stackoverflow.com/q/66933347</id>
+        <re:rank scheme="https://stackoverflow.com">0</re:rank>
+        <title type="text">ld: i386 architecture of input file `lib/kernel.o&#x27; is incompatible with i386:x86-64 output</title>
+            <category scheme="https://stackoverflow.com/tags" term="c&#x2B;&#x2B;" />
+            <category scheme="https://stackoverflow.com/tags" term="linux" />
+            <category scheme="https://stackoverflow.com/tags" term="gcc" />
+            <category scheme="https://stackoverflow.com/tags" term="cross-compiling" />
+        <author>
+            <name>Bam</name>
+            <uri>https://stackoverflow.com/users/11581213</uri>
+        </author>
+        <link rel="alternate" href="https://stackoverflow.com/questions/66933347/ld-i386-architecture-of-input-file-lib-kernel-o-is-incompatible-with-i386x86" />
+        <published>2021-04-03T16:19:11Z</published>
+        <updated>2021-04-03T16:19:11Z</updated>
+        <summary type="html">
+            &lt;p&gt;I am attempting to compile a kernel written in c&#x2B;&#x2B; using a cross compiler, but whenever I try to link the files it throws the error above. There&#x27;s been questions like this but none of them have provided a working solution.&lt;/p&gt;&#xA;&lt;p&gt;&lt;a href=&quot;https://pastebin.com/EnyJxyJe&quot; rel=&quot;nofollow noreferrer&quot;&gt;ld file&lt;/a&gt;&lt;/p&gt;&#xA;&lt;p&gt;&lt;a href=&quot;https://pastebin.com/58yaiRQE&quot; rel=&quot;nofollow noreferrer&quot;&gt;make file&lt;/a&gt; (I call make kernel, make buildimg, and make run in that order)&lt;/p&gt;&#xA;&lt;p&gt;Full output of ld command:&lt;/p&gt;&#xA;&lt;pre&gt;&lt;code&gt;ld: i386 architecture of input file `lib/kernel.o&#x27; is incompatible with i386:x86-64 output&#xA;make: *** [Makefile:33: link] Error 1&#xA;&lt;/code&gt;&lt;/pre&gt;&#xA;&lt;p&gt;gcc version:&lt;/p&gt;&#xA;&lt;pre&gt;&lt;code&gt;i686-elf-gcc (GCC) 10.2.0&#xA;Copyright (C) 2020 Free Software Foundation, Inc.&#xA;This is free software; see the source for copying conditions.  There is NO&#xA;warranty; not even for MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.&#xA;&lt;/code&gt;&lt;/pre&gt;&#xA;&lt;p&gt;&lt;a href=&quot;https://github.com/MorticiaGrey/XOS&quot; rel=&quot;nofollow noreferrer&quot;&gt;Code&lt;/a&gt;&lt;/p&gt;&#xA;
+        </summary>
+    </entry>
+    <entry>
+        <id>https://stackoverflow.com/q/66933292</id>
+        <re:rank scheme="https://stackoverflow.com">0</re:rank>
+        <title type="text">Why does OMP nested parallelism execution outputs differently than linear execution?</title>
+            <category scheme="https://stackoverflow.com/tags" term="c&#x2B;&#x2B;" />
+            <category scheme="https://stackoverflow.com/tags" term="image-processing" />
+            <category scheme="https://stackoverflow.com/tags" term="parallel-processing" />
+            <category scheme="https://stackoverflow.com/tags" term="openmp" />
+        <author>
+            <name>Phil</name>
+            <uri>https://stackoverflow.com/users/11025822</uri>
+        </author>
+        <link rel="alternate" href="https://stackoverflow.com/questions/66933292/why-does-omp-nested-parallelism-execution-outputs-differently-than-linear-execut" />
+        <published>2021-04-03T16:12:59Z</published>
+        <updated>2021-04-03T17:13:17Z</updated>
+        <summary type="html">
+            &lt;p&gt;I&#x27;m attempting to compare values of execution time when detecting edges of an image in a linear way and in a parallel way. Everything works fine in a linear way, but in a parallel way the image written has too much white pixels in a part of the image. To better show what I&#x27;m saying, see image below:&lt;/p&gt;&#xA;&lt;p&gt;&lt;a href=&quot;https://i.stack.imgur.com/ngXp7.png&quot; rel=&quot;nofollow noreferrer&quot;&gt;&lt;img src=&quot;https://i.stack.imgur.com/ngXp7.png&quot; alt=&quot;Linear Execution(left)vsParallel execution(right)&quot; /&gt;&lt;/a&gt;&lt;/p&gt;&#xA;&lt;p&gt;The left image is the output of the code executed linearly, and in the right is using parallelism. You can see the edges of the buildings in both images, and the bottom part of the right image close to its border doesen&#x27;t have the same issue has the rest of it.&lt;/p&gt;&#xA;&lt;p&gt;I cropped the &amp;quot;critical&amp;quot; part of the code that does this tasks, in hope that someone may know what may be causing this.&lt;/p&gt;&#xA;&lt;pre&gt;&lt;code&gt;omp_set_nested(1);&#xA;#pragma omp parallel&#xA;while(col&amp;lt;cols-1) {&#xA;    line = 1;&#xA;    #pragma omp parallel&#xA;    while(line&amp;lt;lines-1) {&#xA;        gradient_x = 0;&#xA;        gradient_y = 0;&#xA;        for(int m = 0; m &amp;lt; mask_size; m&#x2B;&#x2B;) {&#xA;            for(int n = 0; n &amp;lt; mask_size; n&#x2B;&#x2B;) {&#xA;                int np_x = line &#x2B; (m - 1);&#xA;                int np_y = col &#x2B; (n - 1);&#xA;&#xA;                float v = img(np_y,np_x);&#xA;&#xA;                int mask_index = (m*3) &#x2B; n;&#xA;&#xA;                gradient_x = gradient_x &#x2B; (x_mask[mask_index] * v);&#xA;                gradient_y = gradient_y &#x2B; (y_mask[mask_index] * v);&#xA;            }&#xA;        }&#xA;        float gradient_sum = sqrt((gradient_x * gradient_x) &#x2B; (gradient_y * gradient_y));&#xA;        if(gradient_sum &amp;gt;= 255) {&#xA;            gradient_sum = 255;&#xA;        } else if(gradient_sum &amp;lt;= 0) {&#xA;            gradient_sum = 0;&#xA;        }&#xA;        output(line, col) = gradient_sum;&#xA;        #pragma omp critical&#xA;        line&#x2B;&#x2B;;&#xA;    }&#xA;    #pragma omp critical&#xA;    col&#x2B;&#x2B;;&#xA;}&#xA;&lt;/code&gt;&lt;/pre&gt;&#xA;&lt;p&gt;I defined line and col variables as critical because they are the ones used for both reading and writing data, and I believe everything else is working propperly.&lt;/p&gt;&#xA;
+        </summary>
+    </entry>
+    <entry>
+        <id>https://stackoverflow.com/q/66933282</id>
+        <re:rank scheme="https://stackoverflow.com">0</re:rank>
+        <title type="text">C&#x2B;&#x2B;, issue with using getline and cin.ignore() in for loop.Getline is skipping by second iterate in the for loop</title>
+            <category scheme="https://stackoverflow.com/tags" term="c&#x2B;&#x2B;" />
+        <author>
+            <name>KristinaDimi</name>
+            <uri>https://stackoverflow.com/users/8906977</uri>
+        </author>
+        <link rel="alternate" href="https://stackoverflow.com/questions/66933282/c-issue-with-using-getline-and-cin-ignore-in-for-loop-getline-is-skipping-b" />
+        <published>2021-04-03T16:11:24Z</published>
+        <updated>2021-04-03T16:17:45Z</updated>
+        <summary type="html">
+            &lt;p&gt;I have been trying to figure out why it doesn&#x27;t read my second getline(). The first getline(cin, line) works fine. No errors or anything. it just skips that line by the second iterate in the loop. Any help will be greatly appreciated. Thank you.&lt;/p&gt;&#xA;&lt;pre&gt;&lt;code&gt;    int main() {&#xA;    &#xA;        int n = 0;&#xA;        std::cin &amp;gt;&amp;gt; n;&#xA;        std::vector &amp;lt;int&amp;gt; arrNumbers;&#xA;        int requestLine = 0;&#xA;        std::string line;&#xA;        double procent = 0;&#xA;    &#xA;        if (n &amp;gt; 99) {&#xA;            std::cout &amp;lt;&amp;lt; &amp;quot;wrong range of number&amp;quot; &amp;lt;&amp;lt; std::endl;&#xA;            exit(-1);&#xA;        }&#xA;    &#xA;        for (int i = 0; i &amp;lt; n; i&#x2B;&#x2B;) {&#xA;            int num;&#xA;            std::cin &amp;gt;&amp;gt; num;&#xA;            arrNumbers.push_back(num);&#xA;        }&#xA;    &#xA;        std::cin &amp;gt;&amp;gt; requestLine;&#xA;        for (int i = 0; i &amp;lt; requestLine; i&#x2B;&#x2B;) {&#xA;    &#xA;            std::cin.ignore(256, &#x27;\n&#x27;);&#xA;            std::getline(std::cin, line);&#xA;                    &#xA;            &#xA;            int del1 = line.find_first_of(&#x27; &#x27;, 0);  // first position of space&#xA;            int del2 = line.find_first_of(&#x27; &#x27;, del1 &#x2B; 1); // second position of space&#xA;    &#xA;            std::stringstream indexStr(line.substr(0, del1)); // position&#xA;            std::stringstream numberStr(line.substr(del1, del2)); // number&#xA;            std::stringstream repeatsStr(line.substr(del2)); // repied&#xA;    &#xA;            int index, number, repeats;&#xA;    &#xA;            indexStr &amp;gt;&amp;gt; index; &#xA;            numberStr &amp;gt;&amp;gt; number; &#xA;            repeatsStr &amp;gt;&amp;gt; repeats;&#xA;    &#xA;            arrNumbers.insert(arrNumbers.begin() &#x2B; index - 1, repeats, number);&#xA;    &#xA;            del1 = 0;&#xA;            del2 = 0;&#xA;            &#xA;            &#xA;        }&#xA;    &#xA;        for (const int&amp;amp; number: arrNumbers) {&#xA;            sort(arrNumbers.begin(), arrNumbers.end());&#xA;        }&#xA;    &#xA;        &#xA;        return 0;&#xA;    }&#xA;&lt;/code&gt;&lt;/pre&gt;&#xA;
+        </summary>
+    </entry>
+    <entry>
+        <id>https://stackoverflow.com/q/66933220</id>
+        <re:rank scheme="https://stackoverflow.com">0</re:rank>
+        <title type="text">the program ran without errors but it gives wrong results</title>
+            <category scheme="https://stackoverflow.com/tags" term="c&#x2B;&#x2B;" />
+        <author>
+            <name>adham R</name>
+            <uri>https://stackoverflow.com/users/15546040</uri>
+        </author>
+        <link rel="alternate" href="https://stackoverflow.com/questions/66933220/the-program-ran-without-errors-but-it-gives-wrong-results" />
+        <published>2021-04-03T16:05:33Z</published>
+        <updated>2021-04-03T16:08:33Z</updated>
+        <summary type="html">
+            &lt;p&gt;this code is an exercise in array&lt;/p&gt;&#xA;&lt;pre&gt;&lt;code&gt;int L;&#xA;int P=0;&#xA;int N=0;&#xA;int zero=0;&#xA;cout&amp;lt;&amp;lt;&amp;quot;Enter The Size of Array : &amp;quot;&amp;lt;&amp;lt;&amp;quot;                   &#x27;Note that it has to be bigger than 0&#x27;\n&amp;quot;;&#xA;cin&amp;gt;&amp;gt;N;&#xA;&lt;/code&gt;&lt;/pre&gt;&#xA;&lt;p&gt;here I determine the size of the array&lt;/p&gt;&#xA;&lt;pre&gt;&lt;code&gt;int z[N];&#xA;int n=sizeof(z)/sizeof(z[0]);&#xA;cout&amp;lt;&amp;lt;&amp;quot;The Number of elements in this array is : &amp;quot;&amp;lt;&amp;lt;n&amp;lt;&amp;lt;&amp;quot;\n&amp;quot;;&#xA;&lt;/code&gt;&lt;/pre&gt;&#xA;&lt;p&gt;I put the value of each elements&lt;/p&gt;&#xA;&lt;pre&gt;&lt;code&gt;for(int i=0;i&amp;lt;N;i&#x2B;&#x2B;){&#xA;    cout&amp;lt;&amp;lt;&amp;quot;chose the &amp;quot;&amp;lt;&amp;lt;i&amp;lt;&amp;lt;&amp;quot; element : &amp;quot;;&#xA;    cin&amp;gt;&amp;gt;z[i];&#xA;}&#xA;&lt;/code&gt;&lt;/pre&gt;&#xA;&lt;p&gt;this loop for looking in the array and check if its positive, negative or zero&lt;/p&gt;&#xA;&lt;pre&gt;&lt;code&gt;for(int i=0;i&amp;lt;N;i&#x2B;&#x2B;){&#xA;    if (z[i] &amp;gt; 0){&#xA;        P=P&#x2B;1;&#xA;    }&#xA;    else if (z[i] &amp;lt; 0){&#xA;        N=N&#x2B;1;&#xA;    }&#xA;    else{&#xA;            zero=zero&#x2B;1;&#xA;    }&#xA;&#xA;}&#xA;&lt;/code&gt;&lt;/pre&gt;&#xA;&lt;p&gt;here to print the result&lt;/p&gt;&#xA;&lt;pre&gt;&lt;code&gt;cout&amp;lt;&amp;lt;&amp;quot;The Number of Positive elements is : &amp;quot;&amp;lt;&amp;lt;P&amp;lt;&amp;lt;&amp;quot;\n&amp;quot;;&#xA;cout&amp;lt;&amp;lt;&amp;quot;The Number of Negative elements is : &amp;quot;&amp;lt;&amp;lt;N&amp;lt;&amp;lt;&amp;quot;\n&amp;quot;;&#xA;cout&amp;lt;&amp;lt;&amp;quot;The Number of zero elements is : &amp;quot;&amp;lt;&amp;lt;zero&amp;lt;&amp;lt;&amp;quot;\n&amp;quot;;&#xA;&lt;/code&gt;&lt;/pre&gt;&#xA;&lt;p&gt;the issue is that program ran without errors but it gives wrong results&lt;/p&gt;&#xA;
+        </summary>
+    </entry>
+    <entry>
+        <id>https://stackoverflow.com/q/66933211</id>
+        <re:rank scheme="https://stackoverflow.com">0</re:rank>
+        <title type="text">passes the given testcase but not all the cases [closed]</title>
+            <category scheme="https://stackoverflow.com/tags" term="c&#x2B;&#x2B;" />
+            <category scheme="https://stackoverflow.com/tags" term="stack" />
+            <category scheme="https://stackoverflow.com/tags" term="c&#x2B;&#x2B;17" />
+        <author>
+            <name>nishant t</name>
+            <uri>https://stackoverflow.com/users/15546080</uri>
+        </author>
+        <link rel="alternate" href="https://stackoverflow.com/questions/66933211/passes-the-given-testcase-but-not-all-the-cases" />
+        <published>2021-04-03T16:04:55Z</published>
+        <updated>2021-04-03T16:16:29Z</updated>
+        <summary type="html">
+            &lt;p&gt;&lt;a href=&quot;https://www.codechef.com/problems/COMPILER&quot; rel=&quot;nofollow noreferrer&quot;&gt;https://www.codechef.com/problems/COMPILER&lt;/a&gt; this is the problem link&lt;/p&gt;&#xA;&lt;p&gt;the question is on codechef it passes the given cases but not all can any body tell the problem with my code   link is given above&lt;/p&gt;&#xA;&lt;pre&gt;&lt;code&gt;&#xA;   #include&amp;lt;bits/stdc&#x2B;&#x2B;.h&amp;gt;&#xA;&#xA;using namespace std;&#xA;&#xA;int main()&#xA;{&#xA;   int t;&#xA;   cin&amp;gt;&amp;gt;t;&#xA;   while(t--){&#xA;       stack&amp;lt;char&amp;gt; s;&#xA;       string s2;&#xA;       cin&amp;gt;&amp;gt;s2;&#xA;       int count=0;&#xA;       for(int i=0;i&amp;lt;s2.length();i&#x2B;&#x2B;){&#xA;           if(s2[i]==&#x27;&amp;lt;&#x27;)&#xA;           s.push(s2[i]);&#xA;           else if (s.empty()) continue;&#xA;           else if(s2[i]==&#x27;&amp;gt;&#x27; &amp;amp;&amp;amp; s.top()==&#x27;&amp;lt;&#x27;)&#xA;           {&#xA;               count&#x2B;=2;&#xA;               s.pop();&#xA;           }&#xA;       }&#xA;       cout&amp;lt;&amp;lt;count&amp;lt;&amp;lt;endl;&#xA;   }&#xA;}&#xA;&lt;/code&gt;&lt;/pre&gt;&#xA;
+        </summary>
+    </entry>
+    <entry>
+        <id>https://stackoverflow.com/q/66933147</id>
+        <re:rank scheme="https://stackoverflow.com">0</re:rank>
+        <title type="text">How to handle collisions in a 2d console game</title>
+            <category scheme="https://stackoverflow.com/tags" term="c&#x2B;&#x2B;" />
+            <category scheme="https://stackoverflow.com/tags" term="oop" />
+        <author>
+            <name>kastrycznik</name>
+            <uri>https://stackoverflow.com/users/14606362</uri>
+        </author>
+        <link rel="alternate" href="https://stackoverflow.com/questions/66933147/how-to-handle-collisions-in-a-2d-console-game" />
+        <published>2021-04-03T15:58:24Z</published>
+        <updated>2021-04-03T15:58:24Z</updated>
+        <summary type="html">
+            &lt;p&gt;I&#x27;m making a simple console game using windows.h library. Class Game has a map, which is an array of type CHAR_INFO (structure of unicode symbol and its color). This class also has an array of &lt;code&gt;Enemy&lt;/code&gt; and &lt;code&gt;Projectile&lt;/code&gt; objects. Every iteration game updates the position of each object in the game using &lt;code&gt;Entity&lt;/code&gt;&#x27;s method called &lt;code&gt;move()&lt;/code&gt;, which calculates the next position of an entity and checks if there is a symbol which represents an enemy or a projectile. If there is, method &lt;code&gt;move()&lt;/code&gt; calls one of these functions:&lt;/p&gt;&#xA;&lt;pre&gt;&lt;code&gt;    virtual bool onProjectileCollision() = 0;           //collision methods return 0 if the entity is dead&#xA;    virtual bool onEnemyCollision() = 0;&#xA;&lt;/code&gt;&lt;/pre&gt;&#xA;&lt;p&gt;these functions are overriden by &lt;code&gt;Enemy&lt;/code&gt; and &lt;code&gt;Projectile&lt;/code&gt; classes like this:&lt;/p&gt;&#xA;&lt;pre&gt;&lt;code&gt;bool onProjectileCollision() override {&#xA;        return 1;&#xA;    };&#xA;bool onEnemyCollision() override {&#xA;        return 1;&#xA;    };&#xA;&lt;/code&gt;&lt;/pre&gt;&#xA;&lt;p&gt;The problem is that I don&#x27;t know which object the entity collides with (I know only its class), therefore i can&#x27;t call any method  of this object:&lt;/p&gt;&#xA;&lt;pre&gt;&lt;code&gt;class Enemy : public Entity {&#xA;int hp;&#xA;public:&#xA;void die() {&#xA;    hp = 0;&#xA;}&#xA;bool onProjectileCollision() override {&#xA;        die();                                             //I can do this&#xA;        return 1;&#xA;    };&#xA;}&#xA;&#xA;class Projectile : public Entity {&#xA;public:&#xA;bool onEnemyCollision() override {&#xA;        enemy.die();                                 // but I can&#x27;t do this&#xA;        return 0;&#xA;    };&#xA;}&#xA;&lt;/code&gt;&lt;/pre&gt;&#xA;&lt;p&gt;How should i build a connection between these objects ?&lt;/p&gt;&#xA;
+        </summary>
+    </entry>
+    <entry>
+        <id>https://stackoverflow.com/q/66932946</id>
+        <re:rank scheme="https://stackoverflow.com">4</re:rank>
+        <title type="text">C&#x2B;&#x2B;: Is making a string a const reference too often a good practice?</title>
+            <category scheme="https://stackoverflow.com/tags" term="c&#x2B;&#x2B;" />
+            <category scheme="https://stackoverflow.com/tags" term="c&#x2B;&#x2B;14" />
+        <author>
+            <name>kenticent</name>
+            <uri>https://stackoverflow.com/users/14971567</uri>
+        </author>
+        <link rel="alternate" href="https://stackoverflow.com/questions/66932946/c-is-making-a-string-a-const-reference-too-often-a-good-practice" />
+        <published>2021-04-03T15:38:56Z</published>
+        <updated>2021-04-03T16:34:39Z</updated>
+        <summary type="html">
+            &lt;p&gt;Here&#x27;s a snippet from my C&#x2B;&#x2B; code:&lt;/p&gt;&#xA;&lt;pre class=&quot;lang-cpp prettyprint-override&quot;&gt;&lt;code&gt;std::queue&amp;lt;std::string&amp;gt; get_file_names(const std::string &amp;amp;indir)&#xA;{&#xA;    std::queue&amp;lt;std::string&amp;gt; file_names;&#xA;&#xA;    fs::recursive_directory_iterator end;&#xA;    for (fs::recursive_directory_iterator it(indir); it != end; it&#x2B;&#x2B;) {&#xA;        const std::string &amp;amp;extn = it-&amp;gt;path().extension().string();&#xA;        if (extn == &amp;quot;.zip&amp;quot;) {&#xA;            const std::string &amp;amp;file_name = it-&amp;gt;path().string();&#xA;            file_names.push(file_name);&#xA;        }&#xA;    }&#xA;&#xA;    return file_names;&#xA;}&#xA;&lt;/code&gt;&lt;/pre&gt;&#xA;&lt;p&gt;Is it a good practice to make every string you won&#x27;t modify a const reference? I have trouble understanding how can such a reference exist in this context at all. Like the return value of &lt;code&gt;it-&amp;gt;path().string()&lt;/code&gt; above. How can it be assigned to a reference that can be later used outside of the scope of the function when pushed back to a vector?&lt;/p&gt;&#xA;&lt;p&gt;I feel like it has to do something with &lt;code&gt;std::move&lt;/code&gt;.&lt;/p&gt;&#xA;
+        </summary>
+    </entry>
+    <entry>
+        <id>https://stackoverflow.com/q/66932851</id>
+        <re:rank scheme="https://stackoverflow.com">0</re:rank>
+        <title type="text">How to delete unnecessary new line from string while reading file?</title>
+            <category scheme="https://stackoverflow.com/tags" term="c&#x2B;&#x2B;" />
+        <author>
+            <name>Gabriel90</name>
+            <uri>https://stackoverflow.com/users/10781382</uri>
+        </author>
+        <link rel="alternate" href="https://stackoverflow.com/questions/66932851/how-to-delete-unnecessary-new-line-from-string-while-reading-file" />
+        <published>2021-04-03T15:30:49Z</published>
+        <updated>2021-04-03T16:23:35Z</updated>
+        <summary type="html">
+            &lt;p&gt;I have created a simple file reader function which use std::map with std::tuple. The code is as follow:&lt;/p&gt;&#xA;&lt;pre&gt;&lt;code&gt;#include &amp;lt;iostream&amp;gt;&#xA;#include &amp;lt;fstream&amp;gt;&#xA;#include &amp;lt;vector&amp;gt;&#xA;#include &amp;lt;tuple&amp;gt;&#xA;#include &amp;lt;map&amp;gt;&#xA;#include &amp;lt;algorithm&amp;gt;&#xA;&#xA;typedef std::map&amp;lt;std::string, std::tuple&amp;lt;int, double&amp;gt;&amp;gt; Map;&#xA;&#xA;Map Readfile(std::string filename)&#xA;{&#xA;    std::ifstream File(filename);&#xA;    if (!File.is_open())&#xA;    {&#xA;        std::cout &amp;lt;&amp;lt; &amp;quot;File &#x27;&amp;quot; &amp;lt;&amp;lt; filename &amp;lt;&amp;lt; &amp;quot;&#x27; does not exist.&amp;quot;;&#xA;        exit(1);&#xA;    }&#xA;        &#xA;    Map data;&#xA;    std::string name;&#xA;    int a;&#xA;    double b;&#xA;    &#xA;    while (std::getline(File, name, &#x27;\t&#x27;) &amp;gt;&amp;gt; a &amp;gt;&amp;gt; b)&#xA;    {&#xA;        data.insert({name, std::tuple&amp;lt;int, double&amp;gt;(a, b)});&#xA;    }&#xA;    &#xA;    return data;&#xA;}&#xA;&#xA;int main()&#xA;{&#xA;    std::string file = &amp;quot;file_read_v3.txt&amp;quot;;&#xA;    &#xA;    auto mt = Readfile(file);&#xA;    &#xA;    std::for_each(mt.begin(), mt.end(), [](std::pair&amp;lt;std::string,std::tuple&amp;lt;int, double&amp;gt;&amp;gt; it) {&#xA;        std::cout &amp;lt;&amp;lt; it.first &amp;lt;&amp;lt; &amp;quot;\t&amp;quot; &amp;lt;&amp;lt; std::get&amp;lt;0&amp;gt;(it.second) &amp;lt;&amp;lt; &amp;quot;\t&amp;quot; &amp;lt;&amp;lt; std::get&amp;lt;1&amp;gt;(it.second) &amp;lt;&amp;lt; std::endl;&#xA;    });&#xA;    &#xA;    return 0;&#xA;}&#xA;&lt;/code&gt;&lt;/pre&gt;&#xA;&lt;p&gt;The contents of the text file I read:&lt;/p&gt;&#xA;&lt;pre&gt;&lt;code&gt;Yvis    25  63.25&#xA;Wogger X Y  2   6.2&#xA;Bilbo   111 81.3&#xA;Mary    29  154.8&#xA;&lt;/code&gt;&lt;/pre&gt;&#xA;&lt;p&gt;The data in the file is separated by tabs (&lt;code&gt;&#x27;\t&#x27;&lt;/code&gt;). When I compile the source code, I discovered a rather strange thing on the command line: for some reason, there is a new line break after reading each line. I see this on the command line:&lt;/p&gt;&#xA;&lt;pre&gt;&lt;code&gt;&#xA;Bilbo   111     81.3&#xA;&#xA;Mary    29      154.8&#xA;&#xA;Wogger X Y      2       6.2&#xA;Yvis    25      63.25&#xA;&lt;/code&gt;&lt;/pre&gt;&#xA;&lt;p&gt;What is the solution to this problem? And how to avoid not sorting the scanned data?&lt;/p&gt;&#xA;
+        </summary>
+    </entry>
+    <entry>
+        <id>https://stackoverflow.com/q/66932687</id>
+        <re:rank scheme="https://stackoverflow.com">0</re:rank>
+        <title type="text">GLUT popup menu not displaying properly on Linux Mint</title>
+            <category scheme="https://stackoverflow.com/tags" term="c&#x2B;&#x2B;" />
+            <category scheme="https://stackoverflow.com/tags" term="opengl" />
+            <category scheme="https://stackoverflow.com/tags" term="linux-mint" />
+            <category scheme="https://stackoverflow.com/tags" term="freeglut" />
+        <author>
+            <name>Steven P.</name>
+            <uri>https://stackoverflow.com/users/11120889</uri>
+        </author>
+        <link rel="alternate" href="https://stackoverflow.com/questions/66932687/glut-popup-menu-not-displaying-properly-on-linux-mint" />
+        <published>2021-04-03T15:14:55Z</published>
+        <updated>2021-04-03T15:14:55Z</updated>
+        <summary type="html">
+            &lt;p&gt;I am writing an OpenGL-based program in C&#x2B;&#x2B;, and compiling on Linux Mint 19, using &lt;code&gt;libglew2.0&lt;/code&gt; and &lt;code&gt;freeglut3&lt;/code&gt; (installed with &lt;code&gt;apt&lt;/code&gt;), and I want to display a pop-up menu with two entries whenever the user right-clicks on the viewport. The code in the initialization (called before &lt;code&gt;glutMainLoop()&lt;/code&gt;) is similar to the following:&lt;/p&gt;&#xA;&lt;pre&gt;&lt;code&gt;int menu = glutCreateMenu(callback);&#xA;glutAddMenuEntry(&amp;quot;A&amp;quot;, 0);&#xA;glutAddMenuEntry(&amp;quot;B&amp;quot;, 1);&#xA;glutAttachMenu(GLUT_RIGHT_BUTTON);&#xA;glViewport(0, 0, windowWidth, windowHeight);&#xA;... // set up the rest of the program&#xA;&#xA;&lt;/code&gt;&lt;/pre&gt;&#xA;&lt;p&gt;But when I right-click, instead of the proper popup menu I get a two entries high full black popup menu with no recognizable labels like this:&#xA;&lt;a href=&quot;https://i.stack.imgur.com/5YE4d.png&quot; rel=&quot;nofollow noreferrer&quot;&gt;bug&lt;/a&gt;&lt;/p&gt;&#xA;&lt;p&gt;The menu itself is working, so if I click inside the upper or lower half of the black box, it does its thing, but it does not display the labels, or anything really except the black box where the menu is supposed to be.&lt;/p&gt;&#xA;&lt;p&gt;How can I fix this problem? I was thinking that it might be a problem with the communication between Cinnamon and GLUT, but I have no idea how to troubleshoot this. Thanks for the help in advance!&lt;/p&gt;&#xA;
+        </summary>
+    </entry>
+    <entry>
+        <id>https://stackoverflow.com/q/66932498</id>
+        <re:rank scheme="https://stackoverflow.com">-3</re:rank>
+        <title type="text">Fastest way to find weather a string is subsequence of other c&#x2B;&#x2B;</title>
+            <category scheme="https://stackoverflow.com/tags" term="c&#x2B;&#x2B;" />
+        <author>
+            <name>Atif Iqbal</name>
+            <uri>https://stackoverflow.com/users/14863061</uri>
+        </author>
+        <link rel="alternate" href="https://stackoverflow.com/questions/66932498/fastest-way-to-find-weather-a-string-is-subsequence-of-other-c" />
+        <published>2021-04-03T14:53:15Z</published>
+        <updated>2021-04-03T15:33:02Z</updated>
+        <summary type="html">
+            &lt;p&gt;Hey there my friend gave me a question that there is a string for example &amp;quot;011100&amp;quot; so now I have to find the minimum binary number who is not in subsequence i.e from 0.I figured a way to do it but the max constrains are extremely tight length of main string is maximum 60 and the test case is 1e5.&#xA;But I&#x27;m getting TLE for it, is it possible to build the fastest subsequence detector in c&#x2B;&#x2B;&lt;/p&gt;&#xA;&lt;p&gt;QUESTION&lt;/p&gt;&#xA;&lt;p&gt;You are given a binary string S as the smallest non-negative integer such that its binary representation (without leading &#x27;0&#x27;-s; in particular, the binary representation of 0 is &amp;quot;0&amp;quot;) is not a subsequence of S.&lt;/p&gt;&#xA;&lt;p&gt;My code&lt;/p&gt;&#xA;&lt;pre&gt;&lt;code&gt;#include &amp;lt;bits/stdc&#x2B;&#x2B;.h&amp;gt;&#xA;using namespace std;&#xA;#define endl &amp;quot;\n&amp;quot;&#xA;//Finding Subsequence&#xA;bool IsSub(string str1,string str2)&#xA;{&#xA;    int m=str1.length();&#xA;    int n=str2.length();&#xA;    int j = 0;&#xA;    for (int i = 0; i &amp;lt; n &amp;amp;&amp;amp; j &amp;lt; m; i&#x2B;&#x2B;){&#xA;        if (str1[j] == str2[i])&#xA;            j&#x2B;&#x2B;;&#xA;        if(j==m){break;}&#xA;    }&#xA;    return (j == m);&#xA;}&#xA;int main()&#xA;{&#xA;    ios_base::sync_with_stdio(false);&#xA;    cin.tie();&#xA;    cout.tie();&#xA;#ifndef ONLINE_JUDGE&#xA;    freopen(&amp;quot;input.txt&amp;quot;, &amp;quot;r&amp;quot;, stdin);&#xA;    freopen(&amp;quot;output.txt&amp;quot;, &amp;quot;w&amp;quot;, stdout);&#xA;#endif&#xA;    int TC;&#xA;    cin &amp;gt;&amp;gt; TC;&#xA;    while (TC--)&#xA;    {&#xA;        int i = 0;&#xA;        string x;&#xA;        cin&amp;gt;&amp;gt;x;&#xA;        while (true)&#xA;        {&#xA;            //Converting To Binary&#xA;            std::string binary = std::bitset&amp;lt;32&amp;gt;(i).to_string();&#xA;            //Removing Extra Zeroes&#xA;            binary.erase(0, binary.find_first_not_of(&#x27;0&#x27;));&#xA;            //IDK Wby It Doesnt Work For 0,1 So I Did Manually&#xA;            if(i==0){binary=&amp;quot;0&amp;quot;;}&#xA;            else if(i==1){binary=&amp;quot;1&amp;quot;;}&#xA;            bool ans=IsSub(binary,x);&#xA;            if(!ans)&#xA;            {&#xA;                cout&amp;lt;&amp;lt;binary&amp;lt;&amp;lt;endl;&#xA;                break;&#xA;            }&#xA;            i&#x2B;&#x2B;;&#xA;        }&#xA;    }&#xA;}&#xA;&lt;/code&gt;&lt;/pre&gt;&#xA;
+        </summary>
+    </entry>
+    <entry>
+        <id>https://stackoverflow.com/q/66932476</id>
+        <re:rank scheme="https://stackoverflow.com">1</re:rank>
+        <title type="text">Getting address of a lambda call operator for a lambda that captures</title>
+            <category scheme="https://stackoverflow.com/tags" term="c&#x2B;&#x2B;" />
+        <author>
+            <name>Bonita Montero</name>
+            <uri>https://stackoverflow.com/users/6469690</uri>
+        </author>
+        <link rel="alternate" href="https://stackoverflow.com/questions/66932476/getting-address-of-a-lambda-call-operator-for-a-lambda-that-captures" />
+        <published>2021-04-03T14:51:08Z</published>
+        <updated>2021-04-03T15:37:53Z</updated>
+        <summary type="html">
+            &lt;p&gt;Is it possible to get the address of the lambda call operator for a lambda having captures ? And even more: to assign such a pointer to a common pointer which can point to different lambdas having the same captures and the same calling-parameters ? Strictly speaking, assigning a result &lt;code&gt;(class1::*)( ... )&lt;/code&gt; to another result &lt;code&gt;(class2::*)( ... )&lt;/code&gt; shouldn&#x27;t be directly possible, but you might do dirty tricks and cast the pointers which could be possible since the lambda-classes are notionally interchangeable.&lt;/p&gt;&#xA;&lt;p&gt;So what&#x27;s the &amp;quot;proper&amp;quot; syntax for this ? Even as a dirty trick.&lt;/p&gt;&#xA;&lt;p&gt;The last line of the following code unfortunately doesn&#x27;t work:&lt;/p&gt;&#xA;&lt;pre&gt;&lt;code&gt;int main()&#xA;{&#xA;    int i;&#xA;    auto l100 = [&amp;amp;]()&#xA;    {&#xA;        i &#x2B;= 100;&#xA;    };&#xA;    using l100_t = decltype(l100);&#xA;    using l100_fn = void (l100_t::*)();&#xA;    l100_fn fn100 = &amp;amp;l100_t::operator ();&#xA;}&#xA;&lt;/code&gt;&lt;/pre&gt;&#xA;
+        </summary>
+    </entry>
+    <entry>
+        <id>https://stackoverflow.com/q/66932398</id>
+        <re:rank scheme="https://stackoverflow.com">0</re:rank>
+        <title type="text">Read name into string with spaces c&#x2B;&#x2B; [duplicate]</title>
+            <category scheme="https://stackoverflow.com/tags" term="c&#x2B;&#x2B;" />
+        <author>
+            <name>GetHelp</name>
+            <uri>https://stackoverflow.com/users/14667498</uri>
+        </author>
+        <link rel="alternate" href="https://stackoverflow.com/questions/66932398/read-name-into-string-with-spaces-c" />
+        <published>2021-04-03T14:43:05Z</published>
+        <updated>2021-04-03T14:46:59Z</updated>
+        <summary type="html">
+            &lt;p&gt;I have an input file something like this(with 1 space between things):&lt;/p&gt;&#xA;&lt;pre&gt;&lt;code&gt;   name             year       game/place&#xA; Big John           1975     game1 2 game2 3&#xA; Jacob Rafael Ben   1975     game1 2 game2 3 game4 1&#xA; ....&#xA;&lt;/code&gt;&lt;/pre&gt;&#xA;&lt;p&gt;I try to read this into a struct like this:&lt;/p&gt;&#xA;&lt;pre&gt;&lt;code&gt;struct Contestant{&#xA;    string name;&#xA;    int year;&#xA;};&#xA;&lt;/code&gt;&lt;/pre&gt;&#xA;&lt;p&gt;Here is the other struct for the games:&lt;/p&gt;&#xA;&lt;pre&gt;&lt;code&gt;struct Result{&#xA;    string raceName;&#xA;    int place;&#xA;};&#xA;&lt;/code&gt;&lt;/pre&gt;&#xA;&lt;p&gt;This is what i do in the next() func:&lt;/p&gt;&#xA;&lt;pre&gt;&lt;code&gt;void next(){&#xA;    string line;&#xA;    getline(_f, line);&#xA;    _end = _f.fail();&#xA;    if(!_end){&#xA;        istringstream is(line);&#xA;        is &amp;gt;&amp;gt; _cur.name &amp;gt;&amp;gt; _cur.year;&#xA;        Result tmp;&#xA;        while (is &amp;gt;&amp;gt; tmp.raceName &amp;gt;&amp;gt; tmp.place){&#xA;            if (tmp.place == 1){&#xA;                counter&#x2B;&#x2B;;&#xA;            }&#xA;        }&#xA;    }&#xA;}&#xA;&lt;/code&gt;&lt;/pre&gt;&#xA;&lt;p&gt;All i want here is to read the whole name with spaces into _cur.name&lt;/p&gt;&#xA;&lt;pre&gt;&lt;code&gt; Contestant _cur;&#xA;&lt;/code&gt;&lt;/pre&gt;&#xA;
+        </summary>
+    </entry>
+    <entry>
+        <id>https://stackoverflow.com/q/66932397</id>
+        <re:rank scheme="https://stackoverflow.com">-2</re:rank>
+        <title type="text">money converter c&#x2B;&#x2B; gives bracket errors [closed]</title>
+            <category scheme="https://stackoverflow.com/tags" term="c&#x2B;&#x2B;" />
+        <author>
+            <name>Hassan</name>
+            <uri>https://stackoverflow.com/users/15545625</uri>
+        </author>
+        <link rel="alternate" href="https://stackoverflow.com/questions/66932397/money-converter-c-gives-bracket-errors" />
+        <published>2021-04-03T14:42:59Z</published>
+        <updated>2021-04-03T14:52:51Z</updated>
+        <summary type="html">
+            &lt;p&gt;Here is my code:&lt;/p&gt;&#xA;&lt;pre&gt;&lt;code&gt;#include&amp;quot;std_lib_facilities.h&amp;quot;&#xA;&#xA;int main()&#xA;{&#xA;    cout &amp;lt;&amp;lt; &amp;quot;Which currency do you wanna exchange for, $? &#x20AC;? or &#xA5;?:\n&amp;quot;;&#xA;&#xA;    string currency;&#xA;    string dollars;&#xA;    string euros;&#xA;    string yen;&#xA;&#xA;    char $;&#xA;    char &#x20AC;;&#xA;    char &#xA5;;&#xA;    &#xA;    if (cin &amp;gt;&amp;gt; $);&#xA;        cout &amp;lt;&amp;lt; &amp;quot;You have chosen dollars.\n&amp;quot;;&#xA;        cout &amp;lt;&amp;lt; &amp;quot;Please enter your amount:\n&amp;quot;;&#xA;        int amount;&#xA;        cin &amp;gt;&amp;gt; amount;&#xA;        cout &amp;lt;&amp;lt; &amp;quot;Your amount is:&amp;quot; &amp;lt;&amp;lt; amount*153 &amp;lt;&amp;lt; &amp;quot;PKR&amp;quot; &amp;lt;&amp;lt; endl;&#xA;    &#xA; keep_window_open();&#xA; return 0;&#xA;&#xA;}&#xA;&lt;/code&gt;&lt;/pre&gt;&#xA;&lt;p&gt;I tried making a money converter but my code till dollar wont run so I haven&#x27;t wrote euro or yen yet. thank you for the response.&lt;/p&gt;&#xA;
+        </summary>
+    </entry>
+    <entry>
+        <id>https://stackoverflow.com/q/66932390</id>
+        <re:rank scheme="https://stackoverflow.com">-2</re:rank>
+        <title type="text">c&#x2B;&#x2B; conversion types in c&#x2B;&#x2B; primer 5th edition [closed]</title>
+            <category scheme="https://stackoverflow.com/tags" term="c&#x2B;&#x2B;" />
+            <category scheme="https://stackoverflow.com/tags" term="c&#x2B;&#x2B;11" />
+        <author>
+            <name>Abdo abdo</name>
+            <uri>https://stackoverflow.com/users/15545238</uri>
+        </author>
+        <link rel="alternate" href="https://stackoverflow.com/questions/66932390/c-conversion-types-in-c-primer-5th-edition" />
+        <published>2021-04-03T14:42:30Z</published>
+        <updated>2021-04-03T15:32:01Z</updated>
+        <summary type="html">
+            &lt;p&gt;The compiler applies these same type conversions when we use a value of one&#xA;arithmetic type where a value of another arithmetic type is expected. For example,&#xA;when we use a nonbool value as a condition (&#xA7; 1.4.1, p. 12), the arithmetic value is&#xA;converted to bool in the same way that it would be converted if we had assigned&#xA;that arithmetic value to a bool variable:&lt;/p&gt;&#xA;&lt;pre&gt;&lt;code&gt;     int i = 42;&#xA;     if (i) // condition will evaluate as true&#xA;       i = 0;&#xA;&lt;/code&gt;&lt;/pre&gt;&#xA;&lt;p&gt;If the value is 0, then the condition is false; all other (nonzero) values yield true.&#xA;By the same token, when we use a bool in an arithmetic expression, its value&#xA;always converts to either 0 or 1. As a result, using a bool in an arithmetic expression&#xA;is almost surely incorrect.&lt;/p&gt;&#xA;&lt;p&gt;i couldn&#x27;t understand what this part says nor what the code means&lt;/p&gt;&#xA;&lt;p&gt;if anybody could help thank you very much&lt;/p&gt;&#xA;&lt;p&gt;AND PLEASE IF YOU CANNOT ANSWER DO NOT AND IF YOU DO NOT UNDERSTAND THE QUESTION ASK OR DON&#x27;T ANSWER AT ALL BUT PLEASE DO NOT VOTE ME OUT BECAUSE I AM REALLY JUST TRYING TO UNDERSTAND THINGS THAT I AM NEW TO .&lt;/p&gt;&#xA;
+        </summary>
+    </entry>
+    <entry>
+        <id>https://stackoverflow.com/q/66932274</id>
+        <re:rank scheme="https://stackoverflow.com">-1</re:rank>
+        <title type="text">C&#x2B;&#x2B; Connect to Tor then connect to a IRC server</title>
+            <category scheme="https://stackoverflow.com/tags" term="c&#x2B;&#x2B;" />
+            <category scheme="https://stackoverflow.com/tags" term="winsock" />
+            <category scheme="https://stackoverflow.com/tags" term="tor" />
+        <author>
+            <name>glbl</name>
+            <uri>https://stackoverflow.com/users/10762259</uri>
+        </author>
+        <link rel="alternate" href="https://stackoverflow.com/questions/66932274/c-connect-to-tor-then-connect-to-a-irc-server" />
+        <published>2021-04-03T14:28:04Z</published>
+        <updated>2021-04-03T14:28:04Z</updated>
+        <summary type="html">
+            &lt;p&gt;Is there a way to connect Winsock to tor then make a connection to a hidden service IRC server? The only example codes I found using Winsock is connecting to a HTTP web server.&lt;/p&gt;&#xA;
+        </summary>
+    </entry>
+    <entry>
+        <id>https://stackoverflow.com/q/66932243</id>
+        <re:rank scheme="https://stackoverflow.com">0</re:rank>
+        <title type="text">I am getting this error in my code saying Invalid use of void expression</title>
+            <category scheme="https://stackoverflow.com/tags" term="c&#x2B;&#x2B;" />
+            <category scheme="https://stackoverflow.com/tags" term="c&#x2B;&#x2B;11" />
+        <author>
+            <name>Tom</name>
+            <uri>https://stackoverflow.com/users/15545454</uri>
+        </author>
+        <link rel="alternate" href="https://stackoverflow.com/questions/66932243/i-am-getting-this-error-in-my-code-saying-invalid-use-of-void-expression" />
+        <published>2021-04-03T14:24:58Z</published>
+        <updated>2021-04-03T15:34:41Z</updated>
+        <summary type="html">
+            &lt;p&gt;In the function  vector in_to_post(vector infix) (the vector=(1 &#x2B; 2) * 3 ^ 4 ) is being converted to an output vector which is of the form (Postfix: 1 2 &#x2B; 3 4 ^ *) and i am getting an error saying invalid use of void expression . I have commented the lines where i am getting this error.&lt;/p&gt;&#xA;&lt;pre&gt;&lt;code&gt;    char get_optr(Token t) {&#xA;        // your code here&#xA;        return t.optr;&#xA;    }&#xA;&#xA;&#xA;vector&amp;lt;Token&amp;gt; in_to_post(vector&amp;lt;Token&amp;gt; infix) &#xA;{&#xA;    vector&amp;lt;Token&amp;gt; output;&#xA;    // your code here&#xA;    stack&amp;lt;Token&amp;gt;b;&#xA;    for(int i=0;i&amp;lt;infix.size();i&#x2B;&#x2B;)&#xA;    {&#xA;        if(is_opnd(infix[i]))&#xA;        {&#xA;             output.push_back (infix[i]);&#xA;        }&#xA;        else if(get_optr(infix[i])==&#x27;(&#x27;)&#xA;        {&#xA;           b.push(infix[i]);&#xA;        }&#xA;       else if(get_optr(infix[i])==&#x27;)&#x27;)&#xA;        {&#xA;          while(b.empty()==false)&#xA;          {&#xA;              //char i=get_optr(b.pop());&#xA;            if(get_optr(b.pop())==&#x27;(&#x27;)   // I am getting error here&#xA;            {&#xA;                break;&#xA;            }&#xA;            else&#xA;            {&#xA;               output.push_back(b.pop());  //error&#xA;            }&#xA;          }&#xA;        }&#xA;        else if(is_opnd(infix[i])==false)&#xA;        {&#xA;           // char i=infix[i];&#xA;            //char j=b.top();&#xA;            if((priority(infix[i])&amp;gt;priority(b.top()))||get_optr(infix[i])==&#x27;(&#x27;||get_optr(infix[i])==&#x27;)&#x27;)&#xA;            {&#xA;                b.push(infix[i]);&#xA;            }&#xA;        }&#xA;        &#xA;    }&#xA;    while(b.empty()==false)&#xA;    {&#xA;        output.push_back(b.pop()); //error&#xA;    }&#xA;&#xA;    return output;&#xA;}&#xA;&lt;/code&gt;&lt;/pre&gt;&#xA;
+        </summary>
+    </entry>
+    <entry>
+        <id>https://stackoverflow.com/q/66932226</id>
+        <re:rank scheme="https://stackoverflow.com">-1</re:rank>
+        <title type="text">C&#x2B;&#x2B;(server) with Python(client) Socket Programming For File transfer</title>
+            <category scheme="https://stackoverflow.com/tags" term="python" />
+            <category scheme="https://stackoverflow.com/tags" term="c&#x2B;&#x2B;" />
+            <category scheme="https://stackoverflow.com/tags" term="sockets" />
+            <category scheme="https://stackoverflow.com/tags" term="tcp" />
+            <category scheme="https://stackoverflow.com/tags" term="ftp" />
+        <author>
+            <name>Networkx</name>
+            <uri>https://stackoverflow.com/users/14960358</uri>
+        </author>
+        <link rel="alternate" href="https://stackoverflow.com/questions/66932226/cserver-with-pythonclient-socket-programming-for-file-transfer" />
+        <published>2021-04-03T14:23:28Z</published>
+        <updated>2021-04-03T14:23:28Z</updated>
+        <summary type="html">
+            &lt;p&gt;I&#x27;m trying to connect c&#x2B;&#x2B;(server) with Python(client) for file transfer from one system to another. But my code is not working properly. And I&#x27;m using the ubuntu 20.04 LTS system.&lt;/p&gt;&#xA;&lt;p&gt;My Coding for C&#x2B;&#x2B; (Server) - Server.cpp&lt;/p&gt;&#xA;&lt;pre&gt;&lt;code&gt;#include &amp;lt;iostream&amp;gt;&#xA;#include &amp;lt;stdlib.h&amp;gt;&#xA;#include &amp;lt;stdio.h&amp;gt;&#xA;#include &amp;lt;sys/types.h&amp;gt;&#xA;#include &amp;lt;sys/socket.h&amp;gt;&#xA;#include &amp;lt;netinet/in.h&amp;gt;&#xA;#include &amp;lt;string.h&amp;gt;&#xA;#include &amp;lt;fstream&amp;gt;&#xA;#include &amp;lt;unistd.h&amp;gt;&#xA;using namespace std;&#xA;&#xA;int create_socket(int);&#xA;int accept_conn(int);&#xA;&#xA;#ifdef WINDOWS&#xA;    #include &amp;lt;direct.h&amp;gt;&#xA;    #define GetCurrentDir _getcwd&#xA;#else&#xA;    #include &amp;lt;unistd.h&amp;gt;&#xA;    #define GetCurrentDir getcwd&#xA; #endif&#xA;&#xA;#define MAXLINE 4096 /*max text line length*/&#xA;#define LISTENQ 8 /*maximum number of client connections*/&#xA;&#xA;int main (int argc, char **argv)&#xA;{&#xA; int listenfd, connfd, n;&#xA; pid_t childpid;&#xA; socklen_t clilen;&#xA; char buf[MAXLINE];&#xA; struct sockaddr_in cliaddr, servaddr;&#xA;&#xA; if (argc !=2) {                        //validating the input&#xA;  cerr&amp;lt;&amp;lt;&amp;quot;Usage: &amp;lt;port number&amp;gt;&amp;quot;&amp;lt;&amp;lt;endl;&#xA;  exit(1);&#xA; }&#xA; &#xA;&#xA; //Create a socket for the socket&#xA; //If sockfd&amp;lt;0 there was an error in the creation of the socket&#xA; if ((listenfd = socket (AF_INET, SOCK_STREAM, 0)) &amp;lt;0) {&#xA;  cerr&amp;lt;&amp;lt;&amp;quot;Problem in creating the socket&amp;quot;&amp;lt;&amp;lt;endl;&#xA;  exit(2);&#xA; }&#xA;&#xA;&#xA; //preparation of the socket address&#xA; servaddr.sin_family = AF_INET;&#xA; servaddr.sin_addr.s_addr = htonl(INADDR_ANY);&#xA; if(atoi(argv[1])&amp;lt;=1024){&#xA;    cerr&amp;lt;&amp;lt;&amp;quot;Port number must be greater than 1024&amp;quot;&amp;lt;&amp;lt;endl;&#xA;    exit(2);&#xA; }&#xA; servaddr.sin_port = htons(atoi(argv[1]));&#xA;&#xA; //bind the socket&#xA; bind (listenfd, (struct sockaddr *) &amp;amp;servaddr, sizeof(servaddr));&#xA;&#xA; //listen to the socket by creating a connection queue, then wait for clients&#xA; listen (listenfd, LISTENQ);&#xA;&#xA; cout&amp;lt;&amp;lt;&amp;quot;Server running...waiting for connections.&amp;quot;&amp;lt;&amp;lt;endl;&#xA;&#xA; for ( ; ; ) {&#xA;&#xA;  clilen = sizeof(cliaddr);&#xA;  //accept a connection&#xA;  connfd = accept (listenfd, (struct sockaddr *) &amp;amp;cliaddr, &amp;amp;clilen);&#xA;&#xA;  cout&amp;lt;&amp;lt;&amp;quot;Received request...&amp;quot;&amp;lt;&amp;lt;endl;&#xA;&#xA;  if ( (childpid = fork ()) == 0 ) {//if it&#x2019;s 0, it&#x2019;s child process&#xA;&#xA;  cout&amp;lt;&amp;lt;&amp;quot;Child created for dealing with client requests&amp;quot;&amp;lt;&amp;lt;endl;&#xA;&#xA;  //close listening socket&#xA;  close (listenfd);&#xA;  int data_port=1024;                       //for data connection&#xA;  while ( (n = recv(connfd, buf, MAXLINE,0)) &amp;gt; 0)  {&#xA;   cout&amp;lt;&amp;lt;&amp;quot;String received from client: &amp;quot;&amp;lt;&amp;lt;buf;&#xA;   char *token,*dummy;&#xA;   dummy=buf;&#xA;   token=strtok(dummy,&amp;quot; &amp;quot;);&#xA;&#xA;   if (strcmp(&amp;quot;quit\n&amp;quot;,buf)==0)  {&#xA;    cout&amp;lt;&amp;lt;&amp;quot;The client has quit\n&amp;quot;;&#xA;   }&#xA;&#xA;   if (strcmp(&amp;quot;ls\n&amp;quot;,buf)==0)  {&#xA;    FILE *in;&#xA;    char temp[MAXLINE],port[MAXLINE];&#xA;    int datasock;&#xA;    data_port=data_port&#x2B;1;&#xA;    if(data_port==atoi(argv[1])){&#xA;        data_port=data_port&#x2B;1;&#xA;    }&#xA;    sprintf(port,&amp;quot;%d&amp;quot;,data_port);&#xA;    datasock=create_socket(data_port);          //creating socket for data connection&#xA;    send(connfd, port,MAXLINE,0);               //sending data connection port no. to client&#xA;    datasock=accept_conn(datasock);             //accepting connection from client&#xA;    if(!(in = popen(&amp;quot;ls&amp;quot;, &amp;quot;r&amp;quot;))){&#xA;        cout&amp;lt;&amp;lt;&amp;quot;error&amp;quot;&amp;lt;&amp;lt;endl;&#xA;    }&#xA;    while(fgets(temp, sizeof(temp), in)!=NULL){&#xA;        send(datasock,&amp;quot;1&amp;quot;,MAXLINE,0);&#xA;        send(datasock, temp, MAXLINE, 0);&#xA;        &#xA;    }&#xA;    send(datasock,&amp;quot;0&amp;quot;,MAXLINE,0);&#xA;    pclose(in);&#xA;    //cout&amp;lt;&amp;lt;&amp;quot;file closed\n&amp;quot;;&#xA;   }&#xA;&#xA;   if (strcmp(&amp;quot;pwd\n&amp;quot;,buf)==0)  {&#xA;    char curr_dir[MAXLINE];&#xA;&#xA;    GetCurrentDir(curr_dir,MAXLINE-1);&#xA;    send(connfd, curr_dir, MAXLINE, 0);&#xA;    //cout&amp;lt;&amp;lt;curr_dir&amp;lt;&amp;lt;endl;&#xA;   }&#xA;&#xA;   if (strcmp(&amp;quot;cd&amp;quot;,token)==0)  {&#xA;    token=strtok(NULL,&amp;quot; \n&amp;quot;);&#xA;    cout&amp;lt;&amp;lt;&amp;quot;Path given is: &amp;quot;&amp;lt;&amp;lt;token&amp;lt;&amp;lt;endl;&#xA;    if(chdir(token)&amp;lt;0){&#xA;        send(connfd,&amp;quot;0&amp;quot;,MAXLINE,0);&#xA;    }&#xA;    else{&#xA;        send(connfd,&amp;quot;1&amp;quot;,MAXLINE,0);&#xA;    }&#xA;   }&#xA;&#xA;   if (strcmp(&amp;quot;put&amp;quot;,token)==0)  {&#xA;    char port[MAXLINE],buffer[MAXLINE],char_num_blks[MAXLINE],char_num_last_blk[MAXLINE],check[MAXLINE];&#xA;    int datasock,num_blks,num_last_blk,i;&#xA;    FILE *fp;&#xA;    token=strtok(NULL,&amp;quot; \n&amp;quot;);&#xA;    cout&amp;lt;&amp;lt;&amp;quot;Filename given is: &amp;quot;&amp;lt;&amp;lt;token&amp;lt;&amp;lt;endl;&#xA;    data_port=data_port&#x2B;1;&#xA;    if(data_port==atoi(argv[1])){&#xA;        data_port=data_port&#x2B;1;&#xA;    }&#xA;    sprintf(port,&amp;quot;%d&amp;quot;,data_port);&#xA;    datasock=create_socket(data_port);              //creating socket for data connection&#xA;    send(connfd, port,MAXLINE,0);                   //sending data connection port to client&#xA;    datasock=accept_conn(datasock);                 //accepting connection&#xA;    recv(connfd,check,MAXLINE,0);&#xA;    cout&amp;lt;&amp;lt;check;&#xA;    if(strcmp(&amp;quot;1&amp;quot;,check)==0){&#xA;        if((fp=fopen(token,&amp;quot;w&amp;quot;))==NULL)&#xA;            cout&amp;lt;&amp;lt;&amp;quot;Error in creating file\n&amp;quot;;&#xA;        else&#xA;        {&#xA;            recv(connfd, char_num_blks, MAXLINE,0);&#xA;            num_blks=atoi(char_num_blks);&#xA;            for(i= 0; i &amp;lt; num_blks; i&#x2B;&#x2B;) { &#xA;                recv(datasock, buffer, MAXLINE,0);&#xA;                fwrite(buffer,sizeof(char),MAXLINE,fp);&#xA;                //cout&amp;lt;&amp;lt;buffer&amp;lt;&amp;lt;endl;&#xA;            }&#xA;            recv(connfd, char_num_last_blk, MAXLINE,0);&#xA;            num_last_blk=atoi(char_num_last_blk);&#xA;            if (num_last_blk &amp;gt; 0) { &#xA;                recv(datasock, buffer, MAXLINE,0);&#xA;                fwrite(buffer,sizeof(char),num_last_blk,fp);&#xA;                //cout&amp;lt;&amp;lt;buffer&amp;lt;&amp;lt;endl;&#xA;            }&#xA;            fclose(fp);&#xA;            cout&amp;lt;&amp;lt;&amp;quot;File download done.\n&amp;quot;;&#xA;        }&#xA;    }&#xA;   }&#xA;&#xA;   if (strcmp(&amp;quot;get&amp;quot;,token)==0)  {&#xA;    char port[MAXLINE],buffer[MAXLINE],char_num_blks[MAXLINE],char_num_last_blk[MAXLINE];&#xA;    int datasock,lSize,num_blks,num_last_blk,i;&#xA;    FILE *fp;&#xA;    token=strtok(NULL,&amp;quot; \n&amp;quot;);&#xA;    cout&amp;lt;&amp;lt;&amp;quot;Filename given is: &amp;quot;&amp;lt;&amp;lt;token&amp;lt;&amp;lt;endl;&#xA;    data_port=data_port&#x2B;1;&#xA;    if(data_port==atoi(argv[1])){&#xA;        data_port=data_port&#x2B;1;&#xA;    }&#xA;    sprintf(port,&amp;quot;%d&amp;quot;,data_port);&#xA;    datasock=create_socket(data_port);              //creating socket for data connection&#xA;    send(connfd, port,MAXLINE,0);                   //sending port no. to client&#xA;    datasock=accept_conn(datasock);                 //accepting connnection by client&#xA;    if ((fp=fopen(token,&amp;quot;r&amp;quot;))!=NULL)&#xA;    {&#xA;        //size of file&#xA;        send(connfd,&amp;quot;1&amp;quot;,MAXLINE,0);&#xA;        fseek (fp , 0 , SEEK_END);&#xA;        lSize = ftell (fp);&#xA;        rewind (fp);&#xA;        num_blks = lSize/MAXLINE;&#xA;        num_last_blk = lSize%MAXLINE; &#xA;        sprintf(char_num_blks,&amp;quot;%d&amp;quot;,num_blks);&#xA;        send(connfd, char_num_blks, MAXLINE, 0);&#xA;        //cout&amp;lt;&amp;lt;num_blks&amp;lt;&amp;lt;&amp;quot; &amp;quot;&amp;lt;&amp;lt;num_last_blk&amp;lt;&amp;lt;endl;&#xA;&#xA;        for(i= 0; i &amp;lt; num_blks; i&#x2B;&#x2B;) { &#xA;            fread (buffer,sizeof(char),MAXLINE,fp);&#xA;            send(datasock, buffer, MAXLINE, 0);&#xA;            //cout&amp;lt;&amp;lt;buffer&amp;lt;&amp;lt;&amp;quot;   &amp;quot;&amp;lt;&amp;lt;i&amp;lt;&amp;lt;endl;&#xA;        }&#xA;        sprintf(char_num_last_blk,&amp;quot;%d&amp;quot;,num_last_blk);&#xA;        send(connfd, char_num_last_blk, MAXLINE, 0);&#xA;        if (num_last_blk &amp;gt; 0) { &#xA;            fread (buffer,sizeof(char),num_last_blk,fp);&#xA;            send(datasock, buffer, MAXLINE, 0);&#xA;            //cout&amp;lt;&amp;lt;buffer&amp;lt;&amp;lt;endl;&#xA;        }&#xA;        fclose(fp);&#xA;        cout&amp;lt;&amp;lt;&amp;quot;File upload done.\n&amp;quot;;&#xA;        &#xA;    }&#xA;    else{&#xA;        send(connfd,&amp;quot;0&amp;quot;,MAXLINE,0);&#xA;    }&#xA;   }&#xA;&#xA;  }&#xA;&#xA;  if (n &amp;lt; 0)&#xA;   cout&amp;lt;&amp;lt;&amp;quot;Read error&amp;quot;&amp;lt;&amp;lt;endl;&#xA;&#xA;  exit(0);&#xA; }&#xA; //close socket of the server&#xA; close(connfd);&#xA;}&#xA;}&#xA;&#xA;int create_socket(int port)&#xA;{&#xA;int listenfd;&#xA;struct sockaddr_in dataservaddr;&#xA;&#xA;&#xA;//Create a socket for the socket&#xA;//If sockfd&amp;lt;0 there was an error in the creation of the socket&#xA;if ((listenfd = socket (AF_INET, SOCK_STREAM, 0)) &amp;lt;0) {&#xA;cerr&amp;lt;&amp;lt;&amp;quot;Problem in creating the data socket&amp;quot;&amp;lt;&amp;lt;endl;&#xA;exit(2);&#xA;}&#xA;&#xA;&#xA;//preparation of the socket address&#xA;dataservaddr.sin_family = AF_INET;&#xA;dataservaddr.sin_addr.s_addr = htonl(INADDR_ANY);&#xA;dataservaddr.sin_port = htons(port);&#xA;&#xA;if ((bind (listenfd, (struct sockaddr *) &amp;amp;dataservaddr, sizeof(dataservaddr))) &amp;lt;0) {&#xA;cerr&amp;lt;&amp;lt;&amp;quot;Problem in binding the data socket&amp;quot;&amp;lt;&amp;lt;endl;&#xA;exit(2);&#xA;}&#xA;&#xA; //listen to the socket by creating a connection queue, then wait for clients&#xA; listen (listenfd, 1);&#xA;&#xA;return(listenfd);&#xA;}&#xA;&#xA;int accept_conn(int sock)&#xA;{&#xA;int dataconnfd;&#xA;socklen_t dataclilen;&#xA;struct sockaddr_in datacliaddr;&#xA;&#xA;dataclilen = sizeof(datacliaddr);&#xA;  //accept a connection&#xA;if ((dataconnfd = accept (sock, (struct sockaddr *) &amp;amp;datacliaddr, &amp;amp;dataclilen)) &amp;lt;0) {&#xA;cerr&amp;lt;&amp;lt;&amp;quot;Problem in accepting the data socket&amp;quot;&amp;lt;&amp;lt;endl;&#xA;exit(2);&#xA;}&#xA;&#xA;return(dataconnfd);&#xA;}&#xA;&lt;/code&gt;&lt;/pre&gt;&#xA;&lt;p&gt;Python (Client) - Client.py&lt;/p&gt;&#xA;&lt;pre&gt;&lt;code&gt;import socket&#xA;import time&#xA;import os&#xA;import sys&#xA;&#xA;&#xA;def checkArg():&#xA;    &amp;quot;&amp;quot;&amp;quot;this works omly if executed from command prompt window, it is not designed to work on&#xA;    eclipse platform, since by default, len(sys.argv)=1 &amp;amp; therefore the below condition will&#xA;    always be displayed as true&amp;quot;&amp;quot;&amp;quot;&#xA;    if len(sys.argv) != 3:&#xA;        print(&#xA;            &amp;quot;ERROR. Wrong number of arguments passed. System will exit. Next time please supply 2 arguments!&amp;quot;)&#xA;        sys.exit()&#xA;    else:&#xA;        print(&amp;quot;2 Arguments exist. We can proceed further&amp;quot;)&#xA;&#xA;&#xA;def checkPort():&#xA;    if int(sys.argv[2]) &amp;lt;= 1000:&#xA;        print(&#xA;            &amp;quot;Port number invalid. Port number should be greater than 1000 else it will not match with Server port. Next time enter valid port.&amp;quot;)&#xA;        sys.exit()&#xA;    else:&#xA;        print(&amp;quot;Port number accepted!&amp;quot;)&#xA;&#xA;checkArg()&#xA;try:&#xA;    socket.gethostbyname(sys.argv[1])&#xA;except socket.error:&#xA;    print(&amp;quot;Invalid host name. Exiting. Next time enter in proper format.&amp;quot;)&#xA;    sys.exit()&#xA;&#xA;host = sys.argv[1]&#xA;try:&#xA;    port = int(sys.argv[2])&#xA;except ValueError:&#xA;    print(&amp;quot;Error. Exiting. Please enter a valid port number.&amp;quot;)&#xA;    sys.exit()&#xA;except IndexError:&#xA;    print(&amp;quot;Error. Exiting. Please enter a valid port number next time.&amp;quot;)&#xA;    sys.exit()&#xA;&#xA;checkPort()&#xA;&#xA;#host = &amp;quot;127.0.0.1&amp;quot;&#xA;#port = 6000&#xA;try:&#xA;    s = socket.socket(socket.AF_INET, socket.SOCK_DGRAM)&#xA;    print(&amp;quot;Client socket initialized&amp;quot;)&#xA;    s.setblocking(0)&#xA;    s.settimeout(15)&#xA;except socket.error:&#xA;    print(&amp;quot;Failed to create socket&amp;quot;)&#xA;    sys.exit()&#xA;# time.sleep(1)  # gives times for server to reach at same stage&#xA;&#xA;&amp;quot;&amp;quot;&amp;quot;&#xA;Functions like below can be created and called. However, for simplicity, we just put everything in main.&#xA;def ClientGet(a):&#xA;    ClientData, clientAddr = s.recvfrom(51200)&#xA;    text = ClientData.decode(&#x27;utf8&#x27;)&#xA;    print(text)&#xA;&#xA;    ClientData, clientAddr = s.recvfrom(8192)&#xA;    text = ClientData.decode(&#x27;utf8&#x27;)&#xA;    print(&amp;quot;hey&amp;quot; &#x2B; text)&#xA;&#xA;    if len(text) &amp;lt; 30:&#xA;        Data, Recv = s.recvfrom(8192)&#xA;        NewFileOpen = open(a, &amp;quot;wb&amp;quot;)&#xA;        NewFileOpen.write(Data)&#xA;        NewFileOpen.close()&#xA;        print(&amp;quot;Received File&amp;quot;)&#xA;        &#xA;        &#xA;&amp;quot;&amp;quot;&amp;quot;&#xA;&#xA;while True:&#xA;    command = input(&#xA;        #&amp;quot;Please enter a command: \n1. get [file_name]\n2. put [file_name]\n3. list\n4. exit\n &amp;quot;)&#xA;        &amp;quot;Please enter a command: \n1. get [file_name]\n&amp;quot;)&#xA;&#xA;    &amp;quot;&amp;quot;&amp;quot;o get [file_name]&#xA;    o put [file_name]&#xA;    o list&#xA;    o exit&amp;quot;&amp;quot;&amp;quot;&#xA;    CommClient = command.encode(&#x27;utf-8&#x27;)&#xA;    try:&#xA;        s.sendto(CommClient, (host, port))&#xA;    except ConnectionResetError:&#xA;        print(&#xA;            &amp;quot;Error. Port numbers are not matching.&amp;quot;)&#xA;        sys.exit()&#xA;    #text1 = CommClient.decode(&#x27;utf-8&#x27;)&#xA;    #t3 = text1.split()&#xA;    CL = command.split()&#xA;    print(&amp;quot;&amp;quot;)&#xA;    # starting operations&#xA;    if CL[0] == &amp;quot;get&amp;quot;:&#xA;        print(&amp;quot;Checking for acknowledgement&amp;quot;)&#xA;        try:&#xA;            ClientData, clientAddr = s.recvfrom(51200)&#xA;        except ConnectionResetError:&#xA;            print(&#xA;                &amp;quot;Error. Port numbers not matching.&amp;quot;)&#xA;            sys.exit()&#xA;        except:&#xA;            print(&amp;quot;Timeout or some other error&amp;quot;)&#xA;            sys.exit()&#xA;        text = ClientData.decode(&#x27;utf8&#x27;)&#xA;        print(text)&#xA;       # print(&amp;quot;Inside Client Get&amp;quot;)&#xA;&#xA;        try:&#xA;            ClientData2, clientAddr2 = s.recvfrom(51200)&#xA;        except ConnectionResetError:&#xA;            print(&#xA;                &amp;quot;Error. Port numbers not matching.&amp;quot;)&#xA;            sys.exit()&#xA;        except:&#xA;            print(&amp;quot;Timeout or some other error&amp;quot;)&#xA;            sys.exit()&#xA;&#xA;        text2 = ClientData2.decode(&#x27;utf8&#x27;)&#xA;        print(text2)&#xA;&#xA;        if len(text2) &amp;lt; 30:&#xA;            if CL[0] == &amp;quot;get&amp;quot;:&#xA;                BigC = open(&amp;quot;Received-&amp;quot; &#x2B; CL[1], &amp;quot;wb&amp;quot;)&#xA;                d = 0&#xA;                try:&#xA;                    # number of paclets&#xA;                    CountC, countaddress = s.recvfrom(4096)&#xA;                except ConnectionResetError:&#xA;                    print(&#xA;                        &amp;quot;Error. Port numbers not matching.&amp;quot;)&#xA;                    sys.exit()&#xA;                except:&#xA;                    print(&amp;quot;Timeout or some other error&amp;quot;)&#xA;                    sys.exit()&#xA;&#xA;                tillC = CountC.decode(&#x27;utf8&#x27;)&#xA;                tillCC = int(tillC)&#xA;                #print(&amp;quot;Receiving packets will start now if file exists.&amp;quot;)&#xA;                # print(&#xA;                #   &amp;quot;Timeout is 15 seconds so please wait for timeout at the end.&amp;quot;)&#xA;                while tillCC != 0:&#xA;                    ClientBData, clientbAddr = s.recvfrom(4096)&#xA;                    dataS = BigC.write(ClientBData)&#xA;                    d &#x2B;= 1&#xA;                    print(&amp;quot;Received packet number:&amp;quot; &#x2B; str(d))&#xA;                    tillCC = tillCC - 1&#xA;&#xA;                BigC.close()&#xA;                print(&#xA;                    &amp;quot;Check contents in your directory.&amp;quot;)&#xA;&#xA;    elif CL[0] == &amp;quot;put&amp;quot;:&#xA;        print(&amp;quot;Checking for acknowledgement&amp;quot;)&#xA;        try:&#xA;            ClientData, clientAddr = s.recvfrom(4096)&#xA;        except ConnectionResetError:&#xA;            print(&#xA;                &amp;quot;Error. Port numbers not matching.&amp;quot;)&#xA;            sys.exit()&#xA;        except:&#xA;            print(&amp;quot;Timeout or some other error&amp;quot;)&#xA;            sys.exit()&#xA;&#xA;        text = ClientData.decode(&#x27;utf8&#x27;)&#xA;        print(text)&#xA;        print(&amp;quot;We shall start sending data.&amp;quot;)&#xA;&#xA;        if text == &amp;quot;Valid Put command. Let&#x27;s go ahead &amp;quot;:&#xA;            if os.path.isfile(CL[1]):&#xA;&#xA;                c = 0&#xA;                #Length = len(CL1[1])&#xA;&#xA;                size = os.stat(CL[1])&#xA;                sizeS = size.st_size  # number of packets&#xA;                #sizeS = sizeS[:-1]&#xA;                print(&amp;quot;File size in bytes: &amp;quot; &#x2B; str(sizeS))&#xA;                Num = int(sizeS / 4096)&#xA;                Num = Num &#x2B; 1&#xA;               # print(&amp;quot;Number of packets to be sent: &amp;quot; &#x2B; str(Num))&#xA;                till = str(Num)&#xA;                tillC = till.encode(&#x27;utf8&#x27;)&#xA;                s.sendto(tillC, clientAddr)&#xA;                tillIC = int(Num)&#xA;                GetRun = open(CL[1], &amp;quot;rb&amp;quot;)&#xA;&#xA;                while tillIC != 0:&#xA;&#xA;                    #Run = GetRun.read(1024)&#xA;                    Run = GetRun.read(4096)&#xA;                    # print(str(Run))&#xA;                    #CLC = CL[1].encode(&#x27;utf-8&#x27;)&#xA;                    # GetRun.close()&#xA;                    #propMsg = b&amp;quot;put&amp;quot; &#x2B; b&amp;quot;|||&amp;quot; &#x2B; CLC &#x2B; b&amp;quot;|||&amp;quot; &#x2B; Run&#xA;                    s.sendto(Run, clientAddr)&#xA;                    c &#x2B;= 1&#xA;                    tillIC -= 1&#xA;                    #print(&amp;quot;Packet number:&amp;quot; &#x2B; str(c))&#xA;                    print(&amp;quot;Data sending in process:&amp;quot;)&#xA;&#xA;                GetRun.close()&#xA;&#xA;               # print(&amp;quot;Sent from Client - Put function&amp;quot;)&#xA;            else:&#xA;                print(&amp;quot;File does not exist.&amp;quot;)&#xA;        else:&#xA;            print(&amp;quot;Invalid.&amp;quot;)&#xA;&#xA;    elif CL[0] == &amp;quot;list&amp;quot;:&#xA;        print(&amp;quot;Checking for acknowledgement&amp;quot;)&#xA;        try:&#xA;            ClientData, clientAddr = s.recvfrom(51200)&#xA;        except ConnectionResetError:&#xA;            print(&#xA;                &amp;quot;Error. Port numbers not matching.&amp;quot;)&#xA;            sys.exit()&#xA;        except:&#xA;            print(&amp;quot;Timeout or some other error&amp;quot;)&#xA;            sys.exit()&#xA;&#xA;        text = ClientData.decode(&#x27;utf8&#x27;)&#xA;        print(text)&#xA;&#xA;        if text == &amp;quot;Valid List command. Let&#x27;s go ahead &amp;quot;:&#xA;            ClientDataL, clientAddrL = s.recvfrom(4096)&#xA;            text2 = ClientDataL.decode(&#x27;utf8&#x27;)&#xA;            print(text2)&#xA;        else:&#xA;            print(&amp;quot;Error. Invalid.&amp;quot;)&#xA;&#xA;    elif CL[0] == &amp;quot;exit&amp;quot;:&#xA;        print(&#xA;            &amp;quot;Server will exit if you have entered port number correctly, but you will not receive Server&#x27;s message here.&amp;quot;)&#xA;&#xA;    else:&#xA;        try:&#xA;            ClientData, clientAddr = s.recvfrom(51200)&#xA;        except ConnectionResetError:&#xA;            print(&#xA;                &amp;quot;Error. Port numbers not matching.&amp;quot;)&#xA;            sys.exit()&#xA;        except:&#xA;            print(&amp;quot;Timeout or some other error&amp;quot;)&#xA;            sys.exit()&#xA;        text = ClientData.decode(&#x27;utf8&#x27;)&#xA;        print(text)&#xA;&#xA;print(&amp;quot;Program will end now. &amp;quot;)  # though, this won&#x27;t get executed.&#xA;quit()&#xA;&lt;/code&gt;&lt;/pre&gt;&#xA;&lt;p&gt;This code is not working to transfer files from one system to another.&#xA;And I want to add one feature i.e whenever a File is transferred from server to client folder, then the same file transfer again and again like a loop (file is automatically updated by simulator).&#xA;Please Help.&#xA;Thank you in advance and sorry for my English.&lt;/p&gt;&#xA;
+        </summary>
+    </entry>
+    <entry>
+        <id>https://stackoverflow.com/q/66932106</id>
+        <re:rank scheme="https://stackoverflow.com">0</re:rank>
+        <title type="text">How to print out the result of a pair function in C&#x2B;&#x2B;?</title>
+            <category scheme="https://stackoverflow.com/tags" term="c&#x2B;&#x2B;" />
+        <author>
+            <name>Blackdark</name>
+            <uri>https://stackoverflow.com/users/15168304</uri>
+        </author>
+        <link rel="alternate" href="https://stackoverflow.com/questions/66932106/how-to-print-out-the-result-of-a-pair-function-in-c" />
+        <published>2021-04-03T14:10:04Z</published>
+        <updated>2021-04-03T14:17:07Z</updated>
+        <summary type="html">
+            &lt;p&gt;This is the piece of code I&#x27;ve got in a Russian website, I&#x27;ve tried to cout the pair function but all of my attempt failed. Please guide me how to do this.&lt;/p&gt;&#xA;&lt;pre&gt;&lt;code&gt;#include&amp;lt;bits/stdc&#x2B;&#x2B;.h&amp;gt;&#xA;using namespace std;&#xA;typedef long long ll;&#xA;typedef vector&amp;lt;char&amp;gt; vc;&#xA;typedef vector&amp;lt;ll&amp;gt; vll;&#xA;typedef vector&amp;lt;int&amp;gt; vi;&#xA;typedef pair&amp;lt;int, int&amp;gt; ii;&#xA;typedef vector&amp;lt;ii&amp;gt; vii;&#xA;&#xA;pair&amp;lt;int, int&amp;gt; fib (int n) {&#xA;    if (n == 0)&#xA;        return {0, 1};&#xA;&#xA;    auto p = fib(n &amp;gt;&amp;gt; 1);&#xA;    int c = p.first * (2 * p.second - p.first);&#xA;    int d = p.first * p.first &#x2B; p.second * p.second;&#xA;    if (n &amp;amp; 1)&#xA;        return {d, c &#x2B; d};&#xA;    else&#xA;        return {c, d};&#xA;}&#xA;&#xA;int main() {&#xA;    cin.tie(0);&#xA;    cout.tie(0);&#xA;    ios_base::sync_with_stdio(0);&#xA;&#xA;    int n;&#xA;    cin &amp;gt;&amp;gt; n;&#xA;    return 0;&#xA;}&#xA;&lt;/code&gt;&lt;/pre&gt;&#xA;
+        </summary>
+    </entry>
+    <entry>
+        <id>https://stackoverflow.com/q/66931992</id>
+        <re:rank scheme="https://stackoverflow.com">0</re:rank>
+        <title type="text">Find the number of even parity numbers between two integers</title>
+            <category scheme="https://stackoverflow.com/tags" term="c&#x2B;&#x2B;" />
+            <category scheme="https://stackoverflow.com/tags" term="algorithm" />
+        <author>
+            <name>Sushil</name>
+            <uri>https://stackoverflow.com/users/12309808</uri>
+        </author>
+        <link rel="alternate" href="https://stackoverflow.com/questions/66931992/find-the-number-of-even-parity-numbers-between-two-integers" />
+        <published>2021-04-03T13:59:08Z</published>
+        <updated>2021-04-03T14:42:15Z</updated>
+        <summary type="html">
+            &lt;p&gt;I want to find the number of even parity numbers between two integers. Here is what I&#x27;ve written so far:&lt;/p&gt;&#xA;&lt;pre&gt;&lt;code&gt;#include &amp;lt;bits/stdc&#x2B;&#x2B;.h&amp;gt;&#xA;using namespace std;&#xA;#define fastio                        \&#xA;    ios_base::sync_with_stdio(false); \&#xA;    cin.tie(NULL)&#xA;#define ll long long int&#xA;&#xA;bool findParity(ll x)&#xA;{&#xA;    ll y = x ^ (x &amp;gt;&amp;gt; 1);&#xA;    y = y ^ (y &amp;gt;&amp;gt; 2);&#xA;    y = y ^ (y &amp;gt;&amp;gt; 4);&#xA;    y = y ^ (y &amp;gt;&amp;gt; 8);&#xA;    y = y ^ (y &amp;gt;&amp;gt; 16);&#xA;&#xA;    if (y &amp;amp; 1)&#xA;        return 1;&#xA;    return 0;&#xA;}&#xA;&#xA;void solve()&#xA;{&#xA;    ll a,b; cin &amp;gt;&amp;gt; a &amp;gt;&amp;gt; b;&#xA;    ll evenparity = 0;&#xA;    for(ll i = a; i &amp;lt;= b; &#x2B;&#x2B;i){&#xA;        if(findParity(i)==0) evenparity&#x2B;&#x2B;;&#xA;    }&#xA;    cout &amp;lt;&amp;lt; evenparity;&#xA;}&#xA;&#xA;signed main()&#xA;{&#xA;    fastio;&#xA;    solve();&#xA;    return 0;&#xA;}&#xA;&lt;/code&gt;&lt;/pre&gt;&#xA;&lt;p&gt;This works fine. However, the difference between the two integers &lt;code&gt;a&lt;/code&gt; and &lt;code&gt;b&lt;/code&gt; can be as high as &lt;code&gt;10^11&lt;/code&gt;, which means that an &lt;code&gt;O(n)&lt;/code&gt; solution like this would not work. Is there a more efficient i.e &lt;code&gt;O(1)&lt;/code&gt; solution to this problem?&lt;/p&gt;&#xA;
+        </summary>
+    </entry>
+    <entry>
+        <id>https://stackoverflow.com/q/66931952</id>
+        <re:rank scheme="https://stackoverflow.com">0</re:rank>
+        <title type="text">Bitwise operator yield different results [duplicate]</title>
+            <category scheme="https://stackoverflow.com/tags" term="c&#x2B;&#x2B;" />
+            <category scheme="https://stackoverflow.com/tags" term="bit-shift" />
+        <author>
+            <name>arsdever</name>
+            <uri>https://stackoverflow.com/users/10185183</uri>
+        </author>
+        <link rel="alternate" href="https://stackoverflow.com/questions/66931952/bitwise-operator-yield-different-results" />
+        <published>2021-04-03T13:54:47Z</published>
+        <updated>2021-04-03T14:03:05Z</updated>
+        <summary type="html">
+            &lt;p&gt;I was just trying out shift operator and noticed something very very strange.&lt;/p&gt;&#xA;&lt;p&gt;Consider the following code&lt;/p&gt;&#xA;&lt;pre&gt;&lt;code&gt;unsigned a = 1;&#xA;// ========== approach 1&#xA;for (int i = 0; i &amp;lt; 32; &#x2B;&#x2B;i)&#xA;a &amp;lt;&amp;lt;= 1;&#xA;// ========== approach 2&#xA;a &amp;lt;&amp;lt;= 32;&#xA;&#xA;std::cout &amp;lt;&amp;lt; a;&#xA;&lt;/code&gt;&lt;/pre&gt;&#xA;&lt;p&gt;I&#x27;m getting different results&lt;/p&gt;&#xA;&lt;pre&gt;&lt;code&gt;approach 1 =&amp;gt; 0&#xA;approach 2 =&amp;gt; 1&#xA;&lt;/code&gt;&lt;/pre&gt;&#xA;&lt;blockquote&gt;&#xA;&lt;p&gt;Note: run this on &lt;code&gt;x86&lt;/code&gt; arch&lt;/p&gt;&#xA;&lt;/blockquote&gt;&#xA;&lt;p&gt;Could someone explain to me why?&lt;/p&gt;&#xA;
+        </summary>
+    </entry>
+    <entry>
+        <id>https://stackoverflow.com/q/66931782</id>
+        <re:rank scheme="https://stackoverflow.com">-1</re:rank>
+        <title type="text">function to calculate average of Sum of all elements in sub-matrix [closed]</title>
+            <category scheme="https://stackoverflow.com/tags" term="c&#x2B;&#x2B;" />
+            <category scheme="https://stackoverflow.com/tags" term="arrays" />
+            <category scheme="https://stackoverflow.com/tags" term="pointers" />
+            <category scheme="https://stackoverflow.com/tags" term="matrix" />
+            <category scheme="https://stackoverflow.com/tags" term="submatrix" />
+        <author>
+            <name>setller</name>
+            <uri>https://stackoverflow.com/users/14853904</uri>
+        </author>
+        <link rel="alternate" href="https://stackoverflow.com/questions/66931782/function-to-calculate-average-of-sum-of-all-elements-in-sub-matrix" />
+        <published>2021-04-03T13:36:22Z</published>
+        <updated>2021-04-03T14:41:52Z</updated>
+        <summary type="html">
+            &lt;hr /&gt;&#xA;&lt;p&gt;I want to make a function that take three arguments&lt;/p&gt;&#xA;&lt;ol&gt;&#xA;&lt;li&gt;2-D array. (int array[rows][cols])&lt;/li&gt;&#xA;&lt;li&gt;an integer. (int n)&lt;/li&gt;&#xA;&lt;li&gt;address of array[i][j].&lt;/li&gt;&#xA;&lt;/ol&gt;&#xA;&lt;p&gt;Means my function prototype should look like this &lt;code&gt;double Sub_avg(int arr[rows][cols], int n, int *arr[i][j])&lt;/code&gt;&lt;/p&gt;&#xA;&lt;hr /&gt;&#xA;&lt;p&gt;&lt;strong&gt;Function Explanation&lt;/strong&gt;&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&lt;p&gt;first argument is 2D array that represents data which is going to be processed.&lt;/p&gt;&#xA;&lt;/li&gt;&#xA;&lt;li&gt;&lt;p&gt;Here &lt;code&gt;n&lt;/code&gt; stands for &lt;em&gt;n x n&lt;/em&gt; matrix means the dimension of square matrix whose average of all elements is required.&lt;/p&gt;&#xA;&lt;/li&gt;&#xA;&lt;li&gt;&lt;p&gt;The last argument &lt;code&gt;int arr[i][j]&lt;/code&gt; is the address of first element of sub matrix.&lt;/p&gt;&#xA;&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;hr /&gt;&#xA;&lt;p&gt;&lt;strong&gt;Sample Input&lt;/strong&gt;&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;for example let us take 3x3 matrix,&lt;/li&gt;&#xA;&lt;li&gt;&lt;a href=&quot;https://i.stack.imgur.com/OZffE.png&quot; rel=&quot;nofollow noreferrer&quot;&gt;&lt;img src=&quot;https://i.stack.imgur.com/OZffE.png&quot; alt=&quot;enter image description here&quot; /&gt;&lt;/a&gt;&lt;/li&gt;&#xA;&lt;li&gt;I want to calculate for the sub matrix&lt;/li&gt;&#xA;&lt;li&gt;&lt;a href=&quot;https://i.stack.imgur.com/EfffP.png&quot; rel=&quot;nofollow noreferrer&quot;&gt;&lt;img src=&quot;https://i.stack.imgur.com/EfffP.png&quot; alt=&quot;List item&quot; /&gt;&lt;/a&gt;&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;hr /&gt;&#xA;&lt;p&gt;&lt;strong&gt;Output&lt;/strong&gt;&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;then the function would return 8.25 that is (8 &#x2B; 7 &#x2B; 9 &#x2B; 9)/4.&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;hr /&gt;&#xA;&lt;ol&gt;&#xA;&lt;li&gt;Is there any library function or template for this kind of calculations?&lt;/li&gt;&#xA;&lt;li&gt;Is there any other way to get the solution?&lt;/li&gt;&#xA;&lt;/ol&gt;&#xA;
+        </summary>
+    </entry>
+    <entry>
+        <id>https://stackoverflow.com/q/66931749</id>
+        <re:rank scheme="https://stackoverflow.com">-1</re:rank>
+        <title type="text">rekursive function in C&#x2B;&#x2B; &amp; using cin right [closed]</title>
+            <category scheme="https://stackoverflow.com/tags" term="c&#x2B;&#x2B;" />
+            <category scheme="https://stackoverflow.com/tags" term="linux" />
+            <category scheme="https://stackoverflow.com/tags" term="declaration" />
+            <category scheme="https://stackoverflow.com/tags" term="cin" />
+            <category scheme="https://stackoverflow.com/tags" term="calculation" />
+        <author>
+            <name>Felix Jost</name>
+            <uri>https://stackoverflow.com/users/14953536</uri>
+        </author>
+        <link rel="alternate" href="https://stackoverflow.com/questions/66931749/rekursive-function-in-c-using-cin-right" />
+        <published>2021-04-03T13:32:34Z</published>
+        <updated>2021-04-03T13:32:34Z</updated>
+        <summary type="html">
+            &lt;p&gt;Here you see my function:&lt;/p&gt;&#xA;&lt;pre&gt;&lt;code&gt;#include &amp;lt;iostream&amp;gt;&#xA;#include &amp;lt;string&amp;gt;&#xA;&#xA;    void function(int n)&#xA;    {&#xA;      int result;&#xA;      if(n&amp;lt;=2)&#xA;      {&#xA;         result = 1;&#xA;         return result;&#xA;      }&#xA;      else&#xA;      {&#xA;         result = n * function(n-1) - function(n-2);&#xA;         return result;&#xA;      }&#xA;    }&#xA;&lt;/code&gt;&lt;/pre&gt;&#xA;&lt;p&gt;Here you can see the main programm. It&#x27;s one of my first tries in C&#x2B;&#x2B;&#xA;I am not really sure how to use cin and cout, it doesn&#x27;t works.&lt;/p&gt;&#xA;&lt;pre&gt;&lt;code&gt;    int main()&#xA;    {&#xA;        int x;&#xA;        std::cout &amp;lt;&amp;lt;&amp;quot;Please enter your number: \n&amp;quot;;&#xA;        std::cin  &amp;gt;&amp;gt; x;&#xA;        x = function(x);&#xA;        std::cout &amp;lt;&amp;lt;&amp;quot;Your result is &amp;quot; &amp;lt;&amp;lt; x;&#xA;        return 0;&#xA;    }&#xA;&lt;/code&gt;&lt;/pre&gt;&#xA;&lt;p&gt;I have 3 Errors,&#xA;In my function I can&#x27;t return the result with type void.&#xA;This happens two times:&#xA;And I can&#x27;t use function(x) to set the value of x.&#xA;Please help me:&#xA;Greets Flex.&lt;/p&gt;&#xA;
+        </summary>
+    </entry>
+    <entry>
+        <id>https://stackoverflow.com/q/66931628</id>
+        <re:rank scheme="https://stackoverflow.com">-2</re:rank>
+        <title type="text">What will be possible way to delete dynamic memory of below given code [closed]</title>
+            <category scheme="https://stackoverflow.com/tags" term="c&#x2B;&#x2B;" />
+            <category scheme="https://stackoverflow.com/tags" term="dev-c&#x2B;&#x2B;" />
+            <category scheme="https://stackoverflow.com/tags" term="turbo-c" />
+        <author>
+            <name>BUBAI NAYAK</name>
+            <uri>https://stackoverflow.com/users/10622901</uri>
+        </author>
+        <link rel="alternate" href="https://stackoverflow.com/questions/66931628/what-will-be-possible-way-to-delete-dynamic-memory-of-below-given-code" />
+        <published>2021-04-03T13:21:28Z</published>
+        <updated>2021-04-03T13:27:31Z</updated>
+        <summary type="html">
+            &lt;p&gt;I just need to check that the program is deallocating the heap memory correctly or not and how to know?&lt;/p&gt;&#xA;&lt;pre&gt;&lt;code&gt;#include&amp;lt;iostream&amp;gt;&#xA;using namespace std;&#xA;&#xA;struct rect {&#xA;     int *height ;&#xA;     int width ;&#xA;};&#xA;&#xA;  int area(struct rect p,int n,int w){&#xA;&#xA;              p.width=w;&#xA;              for(int i=0;i&amp;lt;n;i&#x2B;&#x2B;){&#xA;              cout&amp;lt;&amp;lt;&amp;quot;enter array valu:&amp;quot;;&#xA;              cin&amp;gt;&amp;gt;p.height[i];&#xA;               }&#xA;              for(int i=0;i&amp;lt;n;i&#x2B;&#x2B;){&#xA;              cout&amp;lt;&amp;lt;&amp;quot;Area:&amp;quot;&amp;lt;&amp;lt;i&amp;lt;&amp;lt;&amp;quot;=&amp;quot;&amp;lt;&amp;lt;p.height[i]*p.width&amp;lt;&amp;lt;endl;&#xA;              }&#xA;             delete[] p.height; // is ithat correct way to delete dynamic memory????&#xA;           }&#xA;   int main(){&#xA;         int n;&#xA;         cin&amp;gt;&amp;gt;n;&#xA;         struct rect r= { new int(n), 6};&#xA;         area(r,5,6);&#xA;&#xA;           return 0;&#xA;          }&#xA;&lt;/code&gt;&lt;/pre&gt;&#xA;&lt;p&gt;So the above code is working fine but I am not sure that is that deallocating heap memory correctly or not?&lt;/p&gt;&#xA;
+        </summary>
+    </entry>
+    <entry>
+        <id>https://stackoverflow.com/q/66931565</id>
+        <re:rank scheme="https://stackoverflow.com">1</re:rank>
+        <title type="text">Is this thread safe list using lock is perfect?</title>
+            <category scheme="https://stackoverflow.com/tags" term="c&#x2B;&#x2B;" />
+            <category scheme="https://stackoverflow.com/tags" term="concurrency" />
+            <category scheme="https://stackoverflow.com/tags" term="thread-safety" />
+        <author>
+            <name>myoldgrandpa</name>
+            <uri>https://stackoverflow.com/users/5031219</uri>
+        </author>
+        <link rel="alternate" href="https://stackoverflow.com/questions/66931565/is-this-thread-safe-list-using-lock-is-perfect" />
+        <published>2021-04-03T13:14:35Z</published>
+        <updated>2021-04-03T14:08:41Z</updated>
+        <summary type="html">
+            &lt;p&gt;Below is the example source code of thread safe list using lock from c&#x2B;&#x2B; concurrency in action 2nd.&lt;/p&gt;&#xA;&lt;pre&gt;&lt;code&gt;template&amp;lt;typename T&amp;gt;&#xA;class threadsafe_list&#xA;{&#xA;    struct node&#xA;    {&#xA;        std::mutex m;&#xA;        std::shared_ptr&amp;lt;T&amp;gt; data;&#xA;        std::unique_ptr&amp;lt;node&amp;gt; next;&#xA;        node():&#xA;            next()&#xA;        {}&#xA;        node(T const&amp;amp; value):&#xA;            data(std::make_shared&amp;lt;T&amp;gt;(value))&#xA;        {}&#xA;    };&#xA;    node head;&#xA;public:&#xA;    threadsafe_list()&#xA;    {}&#xA;    ~threadsafe_list()&#xA;    {&#xA;        remove_if([](node const&amp;amp;){return true;}); // (1) (2)&#xA;    }&#xA;    threadsafe_list(threadsafe_list const&amp;amp; other)=delete;&#xA;    threadsafe_list&amp;amp; operator=(threadsafe_list const&amp;amp; other)=delete;&#xA;    void push_front(T const&amp;amp; value)&#xA;    {&#xA;        std::unique_ptr&amp;lt;node&amp;gt; new_node(new node(value));&#xA;        std::lock_guard&amp;lt;std::mutex&amp;gt; lk(head.m);&#xA;        new_node-&amp;gt;next=std::move(head.next);&#xA;        head.next=std::move(new_node);&#xA;    }&#xA;    template&amp;lt;typename Function&amp;gt;&#xA;    void for_each(Function f)&#xA;    {&#xA;        node* current=&amp;amp;head;&#xA;        std::unique_lock&amp;lt;std::mutex&amp;gt; lk(head.m);&#xA;        while(node* const next=current-&amp;gt;next.get())&#xA;        {&#xA;            std::unique_lock&amp;lt;std::mutex&amp;gt; next_lk(next-&amp;gt;m);&#xA;            lk.unlock();&#xA;            f(*next-&amp;gt;data);&#xA;            current=next;&#xA;            lk=std::move(next_lk);&#xA;        }&#xA;    }&#xA;    template&amp;lt;typename Predicate&amp;gt;&#xA;    std::shared_ptr&amp;lt;T&amp;gt; find_first_if(Predicate p) // (3)&#xA;    {&#xA;        node* current=&amp;amp;head;&#xA;        std::unique_lock&amp;lt;std::mutex&amp;gt; lk(head.m);&#xA;        while(node* const next=current-&amp;gt;next.get())&#xA;        {&#xA;            std::unique_lock&amp;lt;std::mutex&amp;gt; next_lk(next-&amp;gt;m);&#xA;            lk.unlock();&#xA;            if(p(*next-&amp;gt;data))&#xA;            {&#xA;                return next-&amp;gt;data;&#xA;            }&#xA;            current=next;&#xA;            lk=std::move(next_lk);&#xA;        }&#xA;        return std::shared_ptr&amp;lt;T&amp;gt;();&#xA;    }&#xA;    template&amp;lt;typename Predicate&amp;gt;&#xA;    void remove_if(Predicate p)&#xA;    {&#xA;        node* current=&amp;amp;head;&#xA;        std::unique_lock&amp;lt;std::mutex&amp;gt; lk(head.m);&#xA;        while(node* const next=current-&amp;gt;next.get())&#xA;        {&#xA;            std::unique_lock&amp;lt;std::mutex&amp;gt; next_lk(next-&amp;gt;m);&#xA;            if(p(*next-&amp;gt;data)) // (2) - 1&#xA;            {&#xA;                std::unique_ptr&amp;lt;node&amp;gt; old_next=std::move(current-&amp;gt;next);&#xA;                current-&amp;gt;next=std::move(next-&amp;gt;next);&#xA;                next_lk.unlock();&#xA;            }&#xA;            else&#xA;            {&#xA;                lk.unlock();&#xA;                current=next;&#xA;                lk=std::move(next_lk);&#xA;            }&#xA;        }&#xA;    }&#xA;};&#xA;&lt;/code&gt;&lt;/pre&gt;&#xA;&lt;p&gt;I understand how this code works.&#xA;But I don&#x27;t think this code is perfect.&#xA;I put marks on the three places to argue with.&lt;/p&gt;&#xA;&lt;p&gt;(1) remove_if in destructor really necessary?&#xA;Every data in node uses smart pointer. So I don&#x27;t think destructor have to remove the element in the list. What&#x27;s your opinion?&lt;/p&gt;&#xA;&lt;p&gt;(2) Even if remove_if is used, argument of lambda function [](node const&amp;amp;){...} looks weird.&#xA;I think lambda function should be such as [](T const&amp;amp;) {...}. That&#x27;s because if node type is used, at the point (2) - 2, it uses *next-&amp;gt;data as argument so implicit type conversion form T to node occurs in node constructor, which is redundancy. We don&#x27;t have to implicit conversion if we use type of T.&lt;/p&gt;&#xA;&lt;p&gt;(3) find_first_if returns shared_ptr instead of copied value of T. It gives chance of concurrency issue. I&#x27;ll explain more.&#xA;If user get the shared_ptr of data using find_first_if, then user can access the data through this pointer even while node is being modified. Is this safe action? I don&#x27;t think so.&#xA;My suggestion is that it should return copied value of T, which results in T find_first_if(Predicate p) {...}. Am I correct?&lt;/p&gt;&#xA;
+        </summary>
+    </entry>
+</feed>
