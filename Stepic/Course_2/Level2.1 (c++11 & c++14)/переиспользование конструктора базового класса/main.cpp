@@ -20,7 +20,7 @@ void Base::someMethod()
 
 }
 
-class SomeClass : public Base
+class SomeClass final: public Base // а тут final запрещает наследоваться от этого класса
 {
     using Base::Base; // говорим что используем конструктор базового класса
 };
