@@ -17,7 +17,13 @@ private:
 
 void Base::someMethod()
 {
+    auto var = 10; // авто определение
+    decltype(var) var2 = 15; // авто определение 
+}
 
+auto func(int a, int b) -> decltype(a+b) // decltype(a+b) - это тип который будет возвращать функция
+{
+    return a+b;
 }
 
 class SomeClass final: public Base // а тут final запрещает наследоваться от этого класса

@@ -41,6 +41,8 @@ void read(T& value_, Args& ...args_) {
     read(args_...);
 }
 
+void read(int& value_, int& ...args_) = delete; // метод read с этим набором аргументов будет удален
+
 int main(int argc, const char * argv[]) 
 {
     // #1 test read
