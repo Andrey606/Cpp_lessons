@@ -20,6 +20,7 @@ int main(int argc, const char * argv[])
                 << "hp: " << std::get<1>(ui0) << ", "
                 << "iq: " << std::get<2>(ui0) << "\n";
 
+    // std::tie - распаковывает тьюпл
     std::string race1; int hp1; int iq1;
     std::tie(race1, hp1, iq1) = getUnitInfo(1);
     std::cout   << "race: " << race1 << ", "
