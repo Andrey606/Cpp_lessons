@@ -30,7 +30,7 @@ void print_values(std::ostream & os, const T& value, const Args&...args)
 {
     // я ебу почему он рекурсивно не продолжает вызываться когда даже аргументы кончаются, но оно работает!
     os << typeid(value).name() << ": " << value << std::endl;
-    print_values(os, args...);
+    print_values(os, args...); // args_... (args_ = 10, 2, 5) -> print_values(os, 10, 2, 5);
 }
 
  // #1 test read
