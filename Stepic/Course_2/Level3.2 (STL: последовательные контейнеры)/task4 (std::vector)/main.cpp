@@ -25,6 +25,17 @@ int main(int argc, const char * argv[])
     v.emplace_back("Four"); // добавляем новую строку (сразу "Four" передаем в масиы)
     legacy_function(v.data(), v.size());
     std::cout << v[2] << std::endl;
+    v[2] = std::string("Three new");
+    std::cout << v[2] << std::endl;
+    std::cout << sizeof(v[2]) << std::endl;
+    std::cout << sizeof(std::string("Three new")) << std::endl;
+    std::string *ptr = &v[2];
+    std::cout << *ptr << std::endl;
 
+    std::cout << v[15] << std::endl;
+    std::cout << v[22] << std::endl;
+    v[1111] = "sdsddsdsd";
+    v[1111] = "sdsddsdsd";
+    v[1111] = "sdsddsdsd";
     return 0;
 }
